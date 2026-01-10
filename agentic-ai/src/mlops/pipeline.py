@@ -1,17 +1,51 @@
 """
 MLOps pipeline with CI/CD, Docker, and model versioning
 """
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any, Optional, Callable, Union
 import yaml
 import docker
+from docker.models.containers import Container
 import mlflow
+from mlflow.tracking import MlflowClient
 import git
-from datetime import datetime
+from git import Repo
+from datetime import datetime, timedelta
 import subprocess
 import json
 import hashlib
 from pathlib import Path
+import shutil
+import tempfile
+import logging
+from dataclasses import dataclass, field
+import asyncio
+import aiohttp
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import sys
+import os
 
+logger = logging.getLogger(__name__)
+
+@dataclass
+class PipelineStage:
+    """Represents a stage in the MLOps pipeline"""
+    name: str
+    description: str
+    execute: Callable
+    depends_on: List[str] = field(default_factory=list)
+    timeout: int = 300  # seconds
+    retry_count: int = 3
+    enabled: bool = True
+
+@dataclass
+class PipelineResult:
+    """Result of pipeline execution"""
+    stage: str
+    success: bool
+    output: Any
+    error: Optional[str] = None
+    execution_time: float = 0.0
+    timestamp: datetime = field(default_factory=datetime.now)
 
 class MLOpsPipeline:
     """End-to-end MLOps pipeline for AI services"""
@@ -21,378 +55,627 @@ class MLOpsPipeline:
             self.config = yaml.safe_load(f)
 
         self.docker_client = docker.from_env()
-        self.mlflow_client = mlflow.tracking.MlflowClient()
-        self.git_repo = git.Repo(search_parent_directories=True)
+        self.mlflow_client = MlflowClient()
+        self.git_repo = self._get_git_repo()
+        self.stages: Dict[str, PipelineStage] = {}
+        self.results: List[PipelineResult] = []
+        self.artifacts: Dict[str, Any] = {}
 
-        # Setup MLflow
-        mlflow.set_tracking_uri(self.config['mlflow']['tracking_uri'])
-        mlflow.set_experiment(self.config['mlflow']['experiment_name'])
+        self._setup_logging()
+        self._setup_mlflow()
+        self._setup_stages()
 
-    def ci_cd_pipeline(self, trigger_event: Dict[str, Any]):
-        """CI/CD pipeline triggered by events"""
-        print(f"CI/CD Pipeline triggered by {trigger_event.get('event_type')}")
+        logger.info(f"Initialized MLOps pipeline with config from {config_path}")
 
-        # 1. Code quality checks
-        self._run_code_quality_checks()
+    def _setup_logging(self):
+        """Setup logging configuration"""
+        log_level = self.config.get('logging', {}).get('level', 'INFO')
+        logging.basicConfig(
+            level=getattr(logging, log_level),
+            format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+            handlers=[
+                logging.FileHandler(self.config.get('logging', {}).get('file', 'pipeline.log')),
+                logging.StreamHandler(sys.stdout)
+            ]
+        )
 
-        # 2. Run tests
-        test_results = self._run_tests()
+    def _setup_mlflow(self):
+        """Setup MLflow tracking"""
+        mlflow_config = self.config.get('mlflow', {})
+        mlflow.set_tracking_uri(mlflow_config.get('tracking_uri', 'http://localhost:5000'))
+        mlflow.set_experiment(mlflow_config.get('experiment_name', 'agentic-ai-pipeline'))
 
-        # 3. Build and test Docker image
-        if test_results['passed']:
-            docker_image = self._build_docker_image()
-            self._test_docker_image(docker_image)
+        if not mlflow.active_run():
+            mlflow.start_run(run_name=f"pipeline_{datetime.now().strftime('%Y%m%d_%H%M%S')}")
 
-            # 4. Model training (if triggered)
-            if trigger_event.get('train_model', False):
-                model_info = self._train_model(trigger_event)
+        logger.info(f"MLflow initialized: {mlflow.active_run().info.run_id}")
 
-                # 5. Model evaluation
-                evaluation_results = self._evaluate_model(model_info)
+    def _get_git_repo(self) -> Optional[Repo]:
+        """Get git repository"""
+        try:
+            return git.Repo(search_parent_directories=True)
+        except git.exc.InvalidGitRepositoryError:
+            logger.warning("Not in a git repository")
+            return None
 
-                # 6. Model deployment (if meets criteria)
-                if evaluation_results['deploy']:
-                    self._deploy_model(model_info, docker_image)
+    def _setup_stages(self):
+        """Setup pipeline stages"""
+        # Code Quality Stage
+        self.add_stage(PipelineStage(
+            name="code_quality",
+            description="Run code quality and security checks",
+            execute=self._run_code_quality_checks,
+            timeout=600
+        ))
 
-        # 7. Update monitoring
-        self._update_monitoring()
+        # Testing Stage
+        self.add_stage(PipelineStage(
+            name="testing",
+            description="Run test suite",
+            execute=self._run_tests,
+            depends_on=["code_quality"],
+            timeout=900
+        ))
 
-    def _run_code_quality_checks(self):
+        # Build Stage
+        self.add_stage(PipelineStage(
+            name="build",
+            description="Build Docker images",
+            execute=self._build_docker_images,
+            depends_on=["testing"],
+            timeout=1200
+        ))
+
+        # Model Training Stage
+        self.add_stage(PipelineStage(
+            name="model_training",
+            description="Train and evaluate models",
+            execute=self._train_models,
+            depends_on=["build"],
+            timeout=7200  # 2 hours
+        ))
+
+        # Model Evaluation Stage
+        self.add_stage(PipelineStage(
+            name="model_evaluation",
+            description="Evaluate model performance",
+            execute=self._evaluate_models,
+            depends_on=["model_training"],
+            timeout=1800
+        ))
+
+        # Security Scan Stage
+        self.add_stage(PipelineStage(
+            name="security_scan",
+            description="Scan for security vulnerabilities",
+            execute=self._security_scan,
+            depends_on=["build"],
+            timeout=600
+        ))
+
+        # Deployment Stage
+        self.add_stage(PipelineStage(
+            name="deployment",
+            description="Deploy to target environment",
+            execute=self._deploy,
+            depends_on=["model_evaluation", "security_scan"],
+            timeout=1800
+        ))
+
+        # Monitoring Setup Stage
+        self.add_stage(PipelineStage(
+            name="monitoring",
+            description="Setup monitoring and alerts",
+            execute=self._setup_monitoring,
+            depends_on=["deployment"],
+            timeout=600
+        ))
+
+    def add_stage(self, stage: PipelineStage):
+        """Add a stage to the pipeline"""
+        self.stages[stage.name] = stage
+        logger.info(f"Added pipeline stage: {stage.name}")
+
+    def remove_stage(self, stage_name: str):
+        """Remove a stage from the pipeline"""
+        if stage_name in self.stages:
+            del self.stages[stage_name]
+            logger.info(f"Removed pipeline stage: {stage_name}")
+
+    def execute_pipeline(self, trigger_event: Dict[str, Any] = None) -> Dict[str, Any]:
+        """Execute the complete pipeline"""
+        trigger_event = trigger_event or {}
+
+        logger.info(f"Starting pipeline execution triggered by: {trigger_event.get('event_type', 'manual')}")
+
+        start_time = datetime.now()
+        pipeline_result = {
+            "trigger": trigger_event,
+            "start_time": start_time.isoformat(),
+            "stages": {},
+            "overall_success": True,
+            "error": None
+        }
+
+        try:
+            # Execute stages in dependency order
+            executed_stages = set()
+
+            while len(executed_stages) < len(self.stages):
+                # Find stages that can be executed (dependencies satisfied)
+                executable_stages = []
+                for stage_name, stage in self.stages.items():
+                    if (stage_name not in executed_stages and
+                        stage.enabled and
+                        all(dep in executed_stages for dep in stage.depends_on)):
+                        executable_stages.append(stage)
+
+                if not executable_stages:
+                    # Circular dependency or missing stage
+                    raise RuntimeError("Cannot resolve stage dependencies")
+
+                # Execute stages in parallel where possible
+                with ThreadPoolExecutor(max_workers=len(executable_stages)) as executor:
+                    future_to_stage = {
+                        executor.submit(self._execute_stage, stage, trigger_event): stage
+                        for stage in executable_stages
+                    }
+
+                    for future in as_completed(future_to_stage):
+                        stage = future_to_stage[future]
+                        try:
+                            result = future.result(timeout=stage.timeout)
+                            self.results.append(result)
+
+                            pipeline_result["stages"][stage.name] = {
+                                "success": result.success,
+                                "execution_time": result.execution_time,
+                                "error": result.error
+                            }
+
+                            if not result.success:
+                                pipeline_result["overall_success"] = False
+                                pipeline_result["error"] = f"Stage {stage.name} failed"
+                                logger.error(f"Pipeline failed at stage: {stage.name}")
+                                break
+
+                            executed_stages.add(stage.name)
+                            logger.info(f"Stage completed: {stage.name}")
+
+                        except Exception as e:
+                            logger.error(f"Stage {stage.name} execution failed: {e}")
+                            pipeline_result["overall_success"] = False
+                            pipeline_result["error"] = str(e)
+                            break
+
+                if not pipeline_result["overall_success"]:
+                    break
+
+            # Finalize pipeline
+            end_time = datetime.now()
+            pipeline_result["end_time"] = end_time.isoformat()
+            pipeline_result["duration"] = (end_time - start_time).total_seconds()
+
+            # Log to MLflow
+            mlflow.log_metrics({
+                "pipeline_duration": pipeline_result["duration"],
+                "successful_stages": sum(1 for r in self.results if r.success),
+                "failed_stages": sum(1 for r in self.results if not r.success)
+            })
+
+            # Generate report
+            report_path = self._generate_pipeline_report(pipeline_result)
+            pipeline_result["report_path"] = report_path
+
+            if pipeline_result["overall_success"]:
+                logger.info(f"Pipeline completed successfully in {pipeline_result['duration']:.2f} seconds")
+            else:
+                logger.error(f"Pipeline failed: {pipeline_result['error']}")
+
+            return pipeline_result
+
+        except Exception as e:
+            logger.error(f"Pipeline execution failed: {e}")
+            pipeline_result["overall_success"] = False
+            pipeline_result["error"] = str(e)
+            return pipeline_result
+
+        finally:
+            # Cleanup
+            self._cleanup_temp_files()
+
+    def _execute_stage(self, stage: PipelineStage, trigger_event: Dict[str, Any]) -> PipelineResult:
+        """Execute a single pipeline stage with retries"""
+        start_time = datetime.now()
+        last_error = None
+
+        for attempt in range(stage.retry_count):
+            try:
+                logger.info(f"Executing stage {stage.name} (attempt {attempt + 1}/{stage.retry_count})")
+
+                output = stage.execute(trigger_event)
+
+                execution_time = (datetime.now() - start_time).total_seconds()
+
+                result = PipelineResult(
+                    stage=stage.name,
+                    success=True,
+                    output=output,
+                    execution_time=execution_time
+                )
+
+                logger.info(f"Stage {stage.name} completed in {execution_time:.2f} seconds")
+                return result
+
+            except Exception as e:
+                last_error = e
+                logger.warning(f"Stage {stage.name} attempt {attempt + 1} failed: {e}")
+
+                if attempt < stage.retry_count - 1:
+                    logger.info(f"Retrying stage {stage.name} in 5 seconds...")
+                    import time
+                    time.sleep(5)
+
+        # All retries failed
+        execution_time = (datetime.now() - start_time).total_seconds()
+
+        result = PipelineResult(
+            stage=stage.name,
+            success=False,
+            output=None,
+            error=str(last_error),
+            execution_time=execution_time
+        )
+
+        return result
+
+    def _run_code_quality_checks(self, trigger_event: Dict[str, Any]) -> Dict[str, Any]:
         """Run code quality and security checks"""
-        print("Running code quality checks...")
+        logger.info("Running code quality checks...")
 
         checks = [
-            ("pylint", ["pylint", "src/", "--rcfile=.pylintrc"]),
-            ("mypy", ["mypy", "src/", "--ignore-missing-imports"]),
-            ("bandit", ["bandit", "-r", "src/", "-f", "json"]),
-            ("black", ["black", "--check", "src/"]),
-            ("isort", ["isort", "--check-only", "src/"])
+            ("pylint", ["pylint", "src/", "--rcfile=.pylintrc", "--output-format=json"]),
+            ("mypy", ["mypy", "src/", "--ignore-missing-imports", "--no-error-summary"]),
+            ("bandit", ["bandit", "-r", "src/", "-f", "json", "-ll"]),
+            ("black", ["black", "--check", "--diff", "src/"]),
+            ("isort", ["isort", "--check-only", "--diff", "src/"]),
+            ("flake8", ["flake8", "src/", "--count", "--exit-zero"]),
         ]
 
         results = {}
+        total_issues = 0
+
         for check_name, command in checks:
             try:
-                result = subprocess.run(command, capture_output=True, text=True)
+                result = subprocess.run(command, capture_output=True, text=True, timeout=300)
+
+                if check_name == "pylint":
+                    issues = json.loads(result.stdout) if result.stdout else []
+                    issue_count = len(issues)
+                elif check_name == "bandit":
+                    issues = json.loads(result.stdout) if result.stdout else {}
+                    issue_count = len(issues.get("results", []))
+                else:
+                    issue_count = result.returncode if result.returncode != 0 else 0
+
                 results[check_name] = {
-                    "success": result.returncode == 0,
-                    "output": result.stdout,
-                    "error": result.stderr
+                    "success": result.returncode == 0 or check_name in ["flake8"],  # flake8 exit-zero
+                    "issue_count": issue_count,
+                    "output": result.stdout[:1000] if result.stdout else "",
+                    "error": result.stderr[:1000] if result.stderr else ""
                 }
+
+                total_issues += issue_count
+
+            except subprocess.TimeoutExpired:
+                results[check_name] = {"success": False, "error": "Timeout", "issue_count": 0}
             except Exception as e:
-                results[check_name] = {"success": False, "error": str(e)}
+                results[check_name] = {"success": False, "error": str(e), "issue_count": 0}
 
-        # Log results
-        with open("code_quality_report.json", "w") as f:
-            json.dump(results, f, indent=2)
+        # Calculate quality score (0-100)
+        max_issues_per_check = 100
+        quality_score = max(0, 100 - (total_issues / (len(checks) * max_issues_per_check)) * 100)
 
-        return results
+        # Log to MLflow
+        mlflow.log_metrics({
+            "code_quality_score": quality_score,
+            "total_issues": total_issues
+        })
 
-    def _run_tests(self) -> Dict[str, Any]:
+        for check_name, result in results.items():
+            mlflow.log_metric(f"{check_name}_issues", result["issue_count"])
+
+        # Save detailed report
+        report_path = "reports/code_quality_report.json"
+        os.makedirs(os.path.dirname(report_path), exist_ok=True)
+        with open(report_path, 'w') as f:
+            json.dump({
+                "timestamp": datetime.now().isoformat(),
+                "quality_score": quality_score,
+                "total_issues": total_issues,
+                "checks": results
+            }, f, indent=2)
+
+        mlflow.log_artifact(report_path)
+
+        # Fail pipeline if quality score below threshold
+        quality_threshold = self.config.get('code_quality', {}).get('threshold', 80)
+        if quality_score < quality_threshold:
+            raise ValueError(f"Code quality score {quality_score:.1f} below threshold {quality_threshold}")
+
+        return {
+            "quality_score": quality_score,
+            "total_issues": total_issues,
+            "checks": results,
+            "report_path": report_path
+        }
+
+    def _run_tests(self, trigger_event: Dict[str, Any]) -> Dict[str, Any]:
         """Run test suite"""
-        print("Running tests...")
+        logger.info("Running tests...")
+
+        test_config = self.config.get('testing', {})
 
         test_cmds = [
-            ["pytest", "tests/unit/", "-v", "--cov=src", "--cov-report=xml"],
-            ["pytest", "tests/integration/", "-v"],
-            ["pytest", "tests/e2e/", "-v", "--timeout=300"]
+            ["pytest", "tests/unit/", "-v",
+             f"--cov={test_config.get('coverage_path', 'src')}",
+             "--cov-report=xml",
+             f"--cov-report=html:{test_config.get('coverage_html_dir', 'reports/coverage')}",
+             f"--junitxml={test_config.get('junit_report', 'reports/junit.xml')}",
+             f"--numprocesses={test_config.get('parallel_processes', 'auto')}"],
+
+            ["pytest", "tests/integration/", "-v",
+             "--timeout=300",
+             f"--junitxml={test_config.get('junit_integration', 'reports/junit_integration.xml')}"],
+
+            ["pytest", "tests/e2e/", "-v",
+             "--timeout=600",
+             f"--junitxml={test_config.get('junit_e2e', 'reports/junit_e2e.xml')}"],
         ]
 
         test_results = []
+        total_tests = 0
+        passed_tests = 0
+        failed_tests = 0
+
         for cmd in test_cmds:
+            test_type = "unit" if "unit" in cmd[2] else "integration" if "integration" in cmd[2] else "e2e"
+
             try:
-                result = subprocess.run(cmd, capture_output=True, text=True)
+                result = subprocess.run(cmd, capture_output=True, text=True, timeout=1800)
+
+                # Parse test results
+                tests_run = 0
+                tests_passed = 0
+                tests_failed = 0
+
+                # Extract from output
+                for line in result.stdout.split('\n'):
+                    if 'passed' in line and 'failed' in line and 'skipped' in line:
+                        parts = line.split()
+                        tests_run = int(parts[0])
+                        tests_passed = int(parts[2])
+                        tests_failed = int(parts[4])
+                        break
+
                 test_results.append({
-                    "command": cmd[0],
+                    "type": test_type,
                     "success": result.returncode == 0,
-                    "coverage": self._parse_coverage(result.stdout)
+                    "tests_run": tests_run,
+                    "tests_passed": tests_passed,
+                    "tests_failed": tests_failed,
+                    "output": result.stdout[:2000],
+                    "error": result.stderr[:1000] if result.stderr else ""
+                })
+
+                total_tests += tests_run
+                passed_tests += tests_passed
+                failed_tests += tests_failed
+
+            except subprocess.TimeoutExpired:
+                test_results.append({
+                    "type": test_type,
+                    "success": False,
+                    "error": "Timeout after 30 minutes",
+                    "tests_run": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
                 })
             except Exception as e:
-                test_results.append({"command": cmd[0], "success": False, "error": str(e)})
+                test_results.append({
+                    "type": test_type,
+                    "success": False,
+                    "error": str(e),
+                    "tests_run": 0,
+                    "tests_passed": 0,
+                    "tests_failed": 0
+                })
 
-        overall_success = all(r["success"] for r in test_results)
+        # Calculate coverage if available
+        coverage_report = None
+        coverage_path = test_config.get('coverage_xml', 'coverage.xml')
+        if os.path.exists(coverage_path):
+            import xml.etree.ElementTree as ET
+            tree = ET.parse(coverage_path)
+            root = tree.getroot()
+
+            line_coverage = float(root.get('line-rate', 0)) * 100
+            branch_coverage = float(root.get('branch-rate', 0)) * 100
+
+            coverage_report = {
+                "line_coverage": line_coverage,
+                "branch_coverage": branch_coverage,
+                "total_lines": int(root.get('lines-valid', 0)),
+                "covered_lines": int(root.get('lines-covered', 0))
+            }
+
+        # Calculate pass rate
+        pass_rate = (passed_tests / total_tests * 100) if total_tests > 0 else 0
+
+        # Log to MLflow
+        mlflow.log_metrics({
+            "test_pass_rate": pass_rate,
+            "total_tests": total_tests,
+            "passed_tests": passed_tests,
+            "failed_tests": failed_tests
+        })
+
+        if coverage_report:
+            mlflow.log_metrics({
+                "line_coverage": coverage_report["line_coverage"],
+                "branch_coverage": coverage_report["branch_coverage"]
+            })
+
+        # Save test report
+        report_path = "reports/test_report.json"
+        with open(report_path, 'w') as f:
+            json.dump({
+                "timestamp": datetime.now().isoformat(),
+                "pass_rate": pass_rate,
+                "total_tests": total_tests,
+                "passed_tests": passed_tests,
+                "failed_tests": failed_tests,
+                "coverage": coverage_report,
+                "test_results": test_results
+            }, f, indent=2)
+
+        mlflow.log_artifact(report_path)
+
+        # Fail pipeline if pass rate below threshold
+        pass_threshold = test_config.get('pass_threshold', 90)
+        if pass_rate < pass_threshold:
+            raise ValueError(f"Test pass rate {pass_rate:.1f}% below threshold {pass_threshold}%")
+
+        # Fail if coverage below threshold
+        coverage_threshold = test_config.get('coverage_threshold', 80)
+        if coverage_report and coverage_report["line_coverage"] < coverage_threshold:
+            raise ValueError(f"Code coverage {coverage_report['line_coverage']:.1f}% below threshold {coverage_threshold}%")
 
         return {
-            "passed": overall_success,
-            "results": test_results,
-            "timestamp": datetime.now().isoformat()
+            "pass_rate": pass_rate,
+            "total_tests": total_tests,
+            "coverage": coverage_report,
+            "test_results": test_results,
+            "report_path": report_path
         }
 
-    def _build_docker_image(self) -> str:
-        """Build Docker image for AI service"""
-        print("Building Docker image...")
+    def _build_docker_images(self, trigger_event: Dict[str, Any]) -> Dict[str, Any]:
+        """Build Docker images for AI service"""
+        logger.info("Building Docker images...")
 
-        # Create Dockerfile dynamically if needed
+        docker_config = self.config.get('docker', {})
+        build_results = {}
+
+        # Build main application image
+        image_tag = f"{docker_config.get('registry', 'localhost:5000')}/" \
+                   f"{docker_config.get('image_name', 'agentic-ai')}:" \
+                   f"{self._get_git_sha()[:8]}"
+
+        # Create Dockerfile dynamically
         dockerfile_content = self._generate_dockerfile()
-        with open("Dockerfile.ci", "w") as f:
+        dockerfile_path = "Dockerfile.pipeline"
+
+        with open(dockerfile_path, 'w') as f:
             f.write(dockerfile_content)
 
-        # Build image
-        image_tag = f"{self.config['docker']['registry']}/{self.config['docker']['image_name']}:{self._get_git_sha()[:8]}"
-
         try:
+            # Build image
+            logger.info(f"Building image: {image_tag}")
+
             image, build_logs = self.docker_client.images.build(
                 path=".",
-                dockerfile="Dockerfile.ci",
+                dockerfile=dockerfile_path,
                 tag=image_tag,
-                buildargs=self.config['docker'].get('build_args', {}),
-                rm=True
+                buildargs=docker_config.get('build_args', {}),
+                rm=True,
+                forcerm=True,
+                pull=True
             )
 
-            # Push to registry if configured
-            if self.config['docker'].get('push_to_registry', False):
-                self._push_docker_image(image_tag)
+            # Run security scan on built image
+            scan_result = self._scan_docker_image(image_tag)
 
-            print(f"Docker image built: {image_tag}")
-            return image_tag
+            # Test image
+            test_result = self._test_docker_image(image_tag)
+
+            # Push to registry if configured
+            push_result = None
+            if docker_config.get('push_to_registry', False):
+                push_result = self._push_docker_image(image_tag)
+
+            build_results["main_image"] = {
+                "image_tag": image_tag,
+                "build_success": True,
+                "security_scan": scan_result,
+                "test_result": test_result,
+                "push_result": push_result,
+                "size_mb": self._get_image_size_mb(image_tag)
+            }
+
+            logger.info(f"Docker image built successfully: {image_tag}")
 
         except docker.errors.BuildError as e:
-            print(f"Docker build failed: {e}")
+            logger.error(f"Docker build failed: {e}")
+            build_results["main_image"] = {
+                "image_tag": image_tag,
+                "build_success": False,
+                "error": str(e),
+                "logs": str(e.build_log) if hasattr(e, 'build_log') else ""
+            }
             raise
+
+        # Build additional images if configured
+        for additional in docker_config.get('additional_images', []):
+            try:
+                additional_tag = f"{image_tag}-{additional['name']}"
+
+                additional_image, _ = self.docker_client.images.build(
+                    path=additional.get('path', '.'),
+                    dockerfile=additional.get('dockerfile', 'Dockerfile'),
+                    tag=additional_tag,
+                    buildargs=additional.get('build_args', {}),
+                    rm=True
+                )
+
+                build_results[additional['name']] = {
+                    "image_tag": additional_tag,
+                    "build_success": True,
+                    "size_mb": self._get_image_size_mb(additional_tag)
+                }
+
+            except Exception as e:
+                logger.warning(f"Failed to build additional image {additional['name']}: {e}")
+                build_results[additional['name']] = {
+                    "build_success": False,
+                    "error": str(e)
+                }
+
+        # Log to MLflow
+        mlflow.log_metrics({
+            "docker_build_success": 1 if build_results["main_image"]["build_success"] else 0,
+            "docker_image_size_mb": build_results["main_image"].get("size_mb", 0)
+        })
+
+        # Save build report
+        report_path = "reports/docker_build_report.json"
+        with open(report_path, 'w') as f:
+            json.dump({
+                "timestamp": datetime.now().isoformat(),
+                "git_sha": self._get_git_sha(),
+                "images": build_results
+            }, f, indent=2)
+
+        mlflow.log_artifact(report_path)
+
+        return {
+            "images": build_results,
+            "main_image_tag": image_tag,
+            "report_path": report_path
+        }
 
     def _generate_dockerfile(self) -> str:
         """Generate Dockerfile for the AI service"""
-        base_image = self.config['docker']['base_image']
+        docker_config = self.config.get('docker', {})
+        base_image = docker_config.get('base_image', 'python:3.9-slim')
 
-        dockerfile = f"""
-FROM {base_image}
-
-WORKDIR /app
-
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    git \
-    curl \
-    && rm -rf /var/lib/apt/lists/*
-
-# Copy requirements and install Python dependencies
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copy application code
-COPY src/ ./src/
-COPY pyproject.toml .
-COPY setup.py .
-
-# Install the package
-RUN pip install -e .
-
-# Create non-root user
-RUN useradd -m -u 1000 agentic
-USER agentic
-
-# Health check
-HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \\
-    CMD python -c "import requests; requests.get('http://localhost:8080/health')"
-
-EXPOSE 8080
-
-CMD ["python", "-m", "src.api.server"]
-"""
-        return dockerfile
-
-    def _train_model(self, trigger_event: Dict[str, Any]) -> Dict[str, Any]:
-        """Train model with experiment tracking"""
-        print("Training model...")
-
-        with mlflow.start_run() as run:
-            # Log parameters
-            mlflow.log_params(trigger_event.get('training_params', {}))
-            mlflow.log_param("git_commit", self._get_git_sha())
-            mlflow.log_param("docker_image", trigger_event.get('docker_image'))
-
-            # Train model
-            from src.models.finetuning.trainer import ModelFineTuner, FineTuningConfig
-
-            config = FineTuningConfig(
-                base_model=trigger_event['model_config']['base_model'],
-                dataset_path=trigger_event['model_config']['dataset'],
-                output_dir=f"models/{run.info.run_id}",
-                training_method=trigger_event['model_config'].get('method', 'sft')
-            )
-
-            trainer = ModelFineTuner(config)
-            trainer.prepare_model_and_tokenizer()
-            dataset = trainer.load_dataset()
-
-            # Train based on method
-            if config.training_method == 'sft':
-                trainer.train_sft(dataset)
-            elif config.training_method == 'dpo':
-                trainer.train_dpo(dataset)
-            elif config.training_method == 'grpo':
-                trainer.train_grpo(dataset)
-
-            # Save model
-            trainer.save_model()
-
-            # Log artifacts
-            mlflow.log_artifacts(config.output_dir, "model")
-
-            # Log metrics
-            metrics = trainer.evaluate(dataset['test'] if 'test' in dataset else dataset['train'])
-            mlflow.log_metrics(metrics)
-
-        return {
-            "run_id": run.info.run_id,
-            "model_uri": f"runs:/{run.info.run_id}/model",
-            "metrics": metrics
-        }
-
-    def _deploy_model(self, model_info: Dict[str, Any], docker_image: str):
-        """Deploy model to serving infrastructure"""
-        print(f"Deploying model {model_info['run_id']}...")
-
-        # Update model registry
-        model_name = self.config['model_registry']['model_name']
-        model_version = self.mlflow_client.create_model_version(
-            name=model_name,
-            source=model_info['model_uri'],
-            run_id=model_info['run_id']
-        )
-
-        # Transition model stage
-        self.mlflow_client.transition_model_version_stage(
-            name=model_name,
-            version=model_version.version,
-            stage="Staging"
-        )
-
-        # Deploy to Kubernetes (if configured)
-        if self.config.get('kubernetes', {}).get('enabled', False):
-            self._deploy_to_kubernetes(model_name, model_version.version, docker_image)
-
-        # Update API gateway
-        self._update_api_gateway(model_name, model_version.version)
-
-        print(f"Model deployed: {model_name} v{model_version.version}")
-
-    def _deploy_to_kubernetes(self, model_name: str, version: str, docker_image: str):
-        """Deploy to Kubernetes using infrastructure-as-code"""
-        from ..infra.kubernetes.deployer import KubernetesDeployer
-
-        deployer = KubernetesDeployer(self.config['kubernetes'])
-
-        # Generate deployment manifests
-        manifests = deployer.generate_manifests(
-            model_name=model_name,
-            model_version=version,
-            docker_image=docker_image,
-            replicas=self.config['kubernetes'].get('replicas', 2),
-            resources=self.config['kubernetes'].get('resources', {})
-        )
-
-        # Apply manifests
-        deployer.apply_manifests(manifests)
-
-    def _update_api_gateway(self, model_name: str, version: str):
-        """Update API gateway routing"""
-        # Implement API gateway update logic
-        pass
-
-    def _get_git_sha(self) -> str:
-        """Get current git commit SHA"""
-        return self.git_repo.head.object.hexsha
-
-    def _parse_coverage(self, pytest_output: str) -> float:
-        """Parse coverage from pytest output"""
-        # Simplified parsing
-        import re
-        match = re.search(r'TOTAL\s+\d+\s+\d+\s+(\d+)%', pytest_output)
-        return float(match.group(1)) if match else 0.0
-
-
-class ModelVersioning:
-    """Model versioning and management"""
-
-    def __init__(self, registry_uri: str):
-        mlflow.set_tracking_uri(registry_uri)
-        self.client = mlflow.tracking.MlflowClient()
-
-    def register_model(self, run_id: str, model_name: str,
-                       description: str = "") -> str:
-        """Register model in MLflow"""
-        model_uri = f"runs:/{run_id}/model"
-
-        # Create model if doesn't exist
-        try:
-            self.client.get_registered_model(model_name)
-        except mlflow.exceptions.RestException:
-            self.client.create_registered_model(model_name, description)
-
-        # Create model version
-        model_version = self.client.create_model_version(
-            name=model_name,
-            source=model_uri,
-            run_id=run_id
-        )
-
-        return model_version.version
-
-    def promote_model(self, model_name: str, version: str, stage: str):
-        """Promote model to different stage"""
-        self.client.transition_model_version_stage(
-            name=model_name,
-            version=version,
-            stage=stage
-        )
-
-    def get_production_model(self, model_name: str) -> Optional[Dict]:
-        """Get current production model"""
-        try:
-            model = self.client.get_registered_model(model_name)
-            for mv in model.latest_versions:
-                if mv.current_stage == "Production":
-                    return {
-                        "version": mv.version,
-                        "run_id": mv.run_id,
-                        "source": mv.source,
-                        "status": mv.status
-                    }
-        except mlflow.exceptions.RestException:
-            return None
-
-        return None
-
-    def compare_models(self, model_name: str, version1: str, version2: str) -> Dict:
-        """Compare two model versions"""
-        v1 = self.client.get_model_version(model_name, version1)
-        v2 = self.client.get_model_version(model_name, version2)
-
-        # Get metrics for comparison
-        run1 = mlflow.get_run(v1.run_id)
-        run2 = mlflow.get_run(v2.run_id)
-
-        comparison = {
-            "version1": {
-                "version": version1,
-                "metrics": run1.data.metrics,
-                "params": run1.data.params,
-                "tags": run1.data.tags
-            },
-            "version2": {
-                "version": version2,
-                "metrics": run2.data.metrics,
-                "params": run2.data.params,
-                "tags": run2.data.tags
-            },
-            "differences": self._calculate_differences(run1, run2)
-        }
-
-        return comparison
-
-    def _calculate_differences(self, run1, run2) -> Dict:
-        """Calculate differences between runs"""
-        differences = {}
-
-        # Compare metrics
-        for metric in set(run1.data.metrics.keys()) | set(run2.data.metrics.keys()):
-            val1 = run1.data.metrics.get(metric, 0)
-            val2 = run2.data.metrics.get(metric, 0)
-            if val1 != val2:
-                differences[f"metric_{metric}"] = {
-                    "version1": val1,
-                    "version2": val2,
-                    "difference": val2 - val1
-                }
-
-        return differences
+        dockerfile = f"""FROM {base_image}
