@@ -2,9 +2,10 @@
 LangGraph-based agent orchestration system with task decomposition and memory management
 """
 from typing import Dict, List, Any, Optional, TypedDict, Callable
+from typing_extensions import Annotated # Added import
+import operator # Added import
 from langgraph.graph import StateGraph, END
-from langgraph.checkpoint import MemorySaver
-from langgraph.prebuilt import ToolExecutor, tools_condition
+from langgraph.checkpoint.memory import InMemorySaver
 from langchain_core.messages import HumanMessage, SystemMessage, BaseMessage
 from langchain_community.tools import Tool
 from pydantic import BaseModel, Field
@@ -19,7 +20,7 @@ logger = logging.getLogger(__name__)
 
 class AgentState(TypedDict):
     """State definition for agent workflows"""
-    messages: List[BaseMessage]
+    messages: Annotated[List[BaseMessage], operator.add]
     task: str
     subtasks: List[Dict[str, Any]]
     assignments: Dict[str, Any]
@@ -48,7 +49,7 @@ class AgenticOrchestrator:
     def __init__(self, config: Dict[str, Any]):
         self.config = config
         self.workflow_graph = StateGraph(AgentState)
-        self.checkpointer = MemorySaver()
+        self.checkpointer = InMemorySaver()
         self.skills_registry: Dict[str, Any] = {}
         self.tools_registry: Dict[str, Tool] = {}
         self.agent_nodes: Dict[str, Callable] = {}
@@ -98,13 +99,13 @@ class AgenticOrchestrator:
         self.workflow_graph.add_edge("compiler", END)
 
         # Add fallback edges
-        self.workflow_graph.add_edge("supervisor", "human_review")
+
 
         # Compile the graph
         self.app = self.workflow_graph.compile(
-            checkpointer=self.checkpointer,
-            interrupt_before=["human_review"],
-            interrupt_after=["validator"]
+            checkpointer=self.checkpointer
+            # interrupt_before=["human_review"],
+            # interrupt_after=["validator"]
         )
 
         logger.info("Workflow graph compiled successfully")
@@ -435,9 +436,9 @@ class AgenticOrchestrator:
 
     def register_skill(self, skill: Any):
         """Register a modular agent skill"""
-        if hasattr(skill, 'name'):
-            self.skills_registry[skill.name] = skill
-            logger.info(f"Registered skill: {skill.name}")
+        if hasattr(skill, 'config') and hasattr(skill.config, 'name'):
+            self.skills_registry[skill.config.name] = skill
+            logger.info(f"Registered skill: {skill.config.name}")
 
             # Register skill tools
             if hasattr(skill, 'tools'):

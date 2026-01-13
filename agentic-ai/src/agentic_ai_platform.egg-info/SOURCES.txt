@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/agentic_ai_platform.egg-info/PKG-INFO
+src/agentic_ai_platform.egg-info/SOURCES.txt
+src/agentic_ai_platform.egg-info/dependency_links.txt
+src/agentic_ai_platform.egg-info/requires.txt
+src/agentic_ai_platform.egg-info/top_level.txt
+src/agents/orchestrator.py
+src/mcp/mcp_client.py
+src/mlops/pipeline.py
+src/models/finetuning/trainer.py
+src/skills/base_skill.py
+src/skills/sop_executor.py

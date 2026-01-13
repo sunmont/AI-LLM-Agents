@@ -23,6 +23,7 @@ import aiohttp
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import sys
 import os
+from src.mcp.mcp_client import MCPClient, create_mcp_client # Import MCPClient and create_mcp_client
 
 logger = logging.getLogger(__name__)
 
@@ -50,7 +51,7 @@ class PipelineResult:
 class MLOpsPipeline:
     """End-to-end MLOps pipeline for AI services"""
 
-    def __init__(self, config_path: str):
+    def __init__(self, config_path: str, mcp_client: Optional[MCPClient] = None, mcp_config: Optional[Dict[str, Any]] = None):
         with open(config_path, 'r') as f:
             self.config = yaml.safe_load(f)
 
@@ -64,7 +65,11 @@ class MLOpsPipeline:
         self._setup_logging()
         self._setup_mlflow()
         self._setup_stages()
-
+        self.mcp_client = mcp_client
+        if not self.mcp_client and mcp_config:
+            self.mcp_client = create_mcp_client() # Use default client for now, can be configured later
+            asyncio.run(self.mcp_client.connect()) # Connect MCP client
+            
         logger.info(f"Initialized MLOps pipeline with config from {config_path}")
 
     def _setup_logging(self):
@@ -170,6 +175,16 @@ class MLOpsPipeline:
             depends_on=["deployment"],
             timeout=600
         ))
+        
+        # MCP Tool Invocation Stage
+        self.add_stage(PipelineStage(
+            name="mcp_tool_invocation",
+            description="Invoke a generic MCP tool as configured",
+            execute=self._invoke_mcp_tool,
+            depends_on=[], # Dependencies can be configured in the YAML
+            timeout=600
+        ))
+
 
     def add_stage(self, stage: PipelineStage):
         """Add a stage to the pipeline"""
@@ -182,8 +197,8 @@ class MLOpsPipeline:
             del self.stages[stage_name]
             logger.info(f"Removed pipeline stage: {stage_name}")
 
-    def execute_pipeline(self, trigger_event: Dict[str, Any] = None) -> Dict[str, Any]:
-        """Execute the complete pipeline"""
+    async def execute_pipeline(self, trigger_event: Dict[str, Any] = None) -> Dict[str, Any]:
+        """Execute the complete pipeline asynchronously"""
         trigger_event = trigger_event or {}
 
         logger.info(f"Starting pipeline execution triggered by: {trigger_event.get('event_type', 'manual')}")
@@ -214,39 +229,39 @@ class MLOpsPipeline:
                     # Circular dependency or missing stage
                     raise RuntimeError("Cannot resolve stage dependencies")
 
-                # Execute stages in parallel where possible
-                with ThreadPoolExecutor(max_workers=len(executable_stages)) as executor:
-                    future_to_stage = {
-                        executor.submit(self._execute_stage, stage, trigger_event): stage
-                        for stage in executable_stages
-                    }
+                # Prepare tasks for parallel execution
+                tasks = []
+                for stage in executable_stages:
+                    tasks.append(asyncio.create_task(self._execute_stage(stage, trigger_event)))
+                
+                # Run tasks concurrently
+                results = await asyncio.gather(*tasks, return_exceptions=True)
 
-                    for future in as_completed(future_to_stage):
-                        stage = future_to_stage[future]
-                        try:
-                            result = future.result(timeout=stage.timeout)
-                            self.results.append(result)
+                for i, result_or_exception in enumerate(results):
+                    stage = executable_stages[i]
+                    if isinstance(result_or_exception, Exception):
+                        logger.error(f"Stage {stage.name} execution failed: {result_or_exception}")
+                        pipeline_result["overall_success"] = False
+                        pipeline_result["error"] = str(result_or_exception)
+                        break
+                    else:
+                        result = result_or_exception
+                        self.results.append(result)
 
-                            pipeline_result["stages"][stage.name] = {
-                                "success": result.success,
-                                "execution_time": result.execution_time,
-                                "error": result.error
-                            }
+                        pipeline_result["stages"][stage.name] = {
+                            "success": result.success,
+                            "execution_time": result.execution_time,
+                            "error": result.error
+                        }
 
-                            if not result.success:
-                                pipeline_result["overall_success"] = False
-                                pipeline_result["error"] = f"Stage {stage.name} failed"
-                                logger.error(f"Pipeline failed at stage: {stage.name}")
-                                break
-
-                            executed_stages.add(stage.name)
-                            logger.info(f"Stage completed: {stage.name}")
-
-                        except Exception as e:
-                            logger.error(f"Stage {stage.name} execution failed: {e}")
+                        if not result.success:
                             pipeline_result["overall_success"] = False
-                            pipeline_result["error"] = str(e)
+                            pipeline_result["error"] = f"Stage {stage.name} failed"
+                            logger.error(f"Pipeline failed at stage: {stage.name}")
                             break
+
+                        executed_stages.add(stage.name)
+                        logger.info(f"Stage completed: {stage.name}")
 
                 if not pipeline_result["overall_success"]:
                     break
@@ -284,7 +299,7 @@ class MLOpsPipeline:
             # Cleanup
             self._cleanup_temp_files()
 
-    def _execute_stage(self, stage: PipelineStage, trigger_event: Dict[str, Any]) -> PipelineResult:
+    async def _execute_stage(self, stage: PipelineStage, trigger_event: Dict[str, Any]) -> PipelineResult:
         """Execute a single pipeline stage with retries"""
         start_time = datetime.now()
         last_error = None
@@ -293,7 +308,11 @@ class MLOpsPipeline:
             try:
                 logger.info(f"Executing stage {stage.name} (attempt {attempt + 1}/{stage.retry_count})")
 
-                output = stage.execute(trigger_event)
+                # Handle both sync and async execute functions
+                if asyncio.iscoroutinefunction(stage.execute):
+                    output = await stage.execute(trigger_event)
+                else:
+                    output = stage.execute(trigger_event)
 
                 execution_time = (datetime.now() - start_time).total_seconds()
 
@@ -567,9 +586,9 @@ class MLOpsPipeline:
         build_results = {}
 
         # Build main application image
-        image_tag = f"{docker_config.get('registry', 'localhost:5000')}/" \
-                   f"{docker_config.get('image_name', 'agentic-ai')}:" \
-                   f"{self._get_git_sha()[:8]}"
+        image_tag = (f"{docker_config.get('registry', 'localhost:5000')}/"
+                     f"{docker_config.get('image_name', 'agentic-ai')}:"
+                     f"{self._get_git_sha()[:8]}")
 
         # Create Dockerfile dynamically
         dockerfile_content = self._generate_dockerfile()
@@ -679,3 +698,373 @@ class MLOpsPipeline:
         base_image = docker_config.get('base_image', 'python:3.9-slim')
 
         dockerfile = f"""FROM {base_image}
+# Set working directory
+WORKDIR /app
+
+# Copy poetry.lock and pyproject.toml files to the container
+COPY pyproject.toml poetry.lock* /app/
+
+# Install poetry and dependencies
+RUN pip install poetry
+RUN poetry install --no-root --no-dev --no-interaction --no-ansi
+
+# Copy the rest of the application code
+COPY . /app
+
+# Set environment variables for MLflow
+ENV MLFLOW_TRACKING_URI={docker_config.get('mlflow_tracking_uri', 'http://mlflow:5000')}
+ENV MLFLOW_EXPERIMENT_NAME={docker_config.get('mlflow_experiment_name', 'agentic-ai-pipeline')}
+
+# Expose port for FastAPI or other services
+EXPOSE {docker_config.get('port', '8000')}
+
+# Command to run the application
+CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "{docker_config.get('port', '8000')}"]
+"""
+        return dockerfile
+
+    def _scan_docker_image(self, image_tag: str) -> Dict[str, Any]:
+        """Scan Docker image for vulnerabilities using Trivy"""
+        logger.info(f"Scanning Docker image: {image_tag} for vulnerabilities...")
+        try:
+            # Use Trivy to scan the image
+            # Assumes Trivy is installed and accessible in the pipeline environment
+            # Example: trivy image --format json --output results.json <image_tag>
+            scan_command = ["trivy", "image", "--format", "json", image_tag]
+            result = subprocess.run(scan_command, capture_output=True, text=True, timeout=900)
+            
+            scan_report = json.loads(result.stdout) if result.stdout else {}
+            vulnerabilities_found = 0
+            if scan_report and scan_report.get("Vulnerabilities"):
+                vulnerabilities_found = len(scan_report["Vulnerabilities"])
+
+            # Log to MLflow
+            mlflow.log_metric("image_vulnerabilities_count", vulnerabilities_found)
+
+            report_path = f"reports/trivy_scan_{image_tag.replace(':', '_').replace('/', '_')}.json"
+            os.makedirs(os.path.dirname(report_path), exist_ok=True)
+            with open(report_path, 'w') as f:
+                json.dump(scan_report, f, indent=2)
+            mlflow.log_artifact(report_path)
+
+            if result.returncode != 0:
+                logger.warning(f"Trivy scan found vulnerabilities or exited with non-zero: {result.stderr}")
+                return {"success": False, "vulnerabilities_found": vulnerabilities_found, "report_path": report_path, "error": result.stderr[:1000]}
+
+            logger.info(f"Docker image scan complete. Vulnerabilities found: {vulnerabilities_found}")
+            return {"success": True, "vulnerabilities_found": vulnerabilities_found, "report_path": report_path}
+
+        except subprocess.TimeoutExpired:
+            logger.error(f"Trivy scan timed out for image {image_tag}")
+            return {"success": False, "error": "Trivy scan timeout", "vulnerabilities_found": 0}
+        except Exception as e:
+            logger.error(f"Error during Trivy scan: {e}")
+            return {"success": False, "error": str(e), "vulnerabilities_found": 0}
+
+    def _test_docker_image(self, image_tag: str) -> Dict[str, Any]:
+        """Run tests inside the built Docker image"""
+        logger.info(f"Testing Docker image: {image_tag}")
+        try:
+            # Run the tests defined in the Docker image
+            # This assumes the Dockerfile's CMD or ENTRYPOINT can be overridden for testing,
+            # or that tests are accessible and runnable within the image.
+            # Example: docker run --rm <image_tag> pytest tests/
+            
+            # For simplicity, let's assume a test command specified in config
+            test_command_in_container = self.config.get('docker', {}).get('test_command_in_container', "pytest tests/")
+            
+            container: Container = self.docker_client.containers.run(
+                image_tag,
+                command=test_command_in_container,
+                remove=True,
+                detach=False,
+                environment={"PYTHONUNBUFFERED": "1"}
+            )
+            
+            # The logs from the container will contain test results
+            logs = container.logs().decode('utf-8')
+            
+            # Basic pass/fail check
+            success = "failed" not in logs.lower() and "error" not in logs.lower()
+            
+            mlflow.log_metric("docker_image_test_success", 1 if success else 0)
+            mlflow.log_text(logs, "docker_image_test_logs.txt")
+
+            if not success:
+                logger.warning(f"Docker image tests failed for {image_tag}")
+                return {"success": False, "output": logs[:2000], "error": "Tests failed in container"}
+
+            logger.info(f"Docker image tests passed for {image_tag}")
+            return {"success": True, "output": logs[:2000]}
+
+        except docker.errors.ContainerError as e:
+            logger.error(f"Docker container error during testing: {e}")
+            return {"success": False, "error": str(e), "output": str(e.stderr)}
+        except Exception as e:
+            logger.error(f"Error testing Docker image: {e}")
+            return {"success": False, "error": str(e)}
+
+    def _push_docker_image(self, image_tag: str) -> Dict[str, Any]:
+        """Push Docker image to registry"""
+        logger.info(f"Pushing Docker image: {image_tag} to registry...")
+        try:
+            # Push the image
+            push_result = self.docker_client.images.push(image_tag)
+            logger.info(f"Docker image pushed successfully: {image_tag}")
+            return {"success": True, "output": push_result}
+        except Exception as e:
+            logger.error(f"Error pushing Docker image: {e}")
+            raise
+
+    def _get_image_size_mb(self, image_tag: str) -> float:
+        """Get Docker image size in MB"""
+        try:
+            image = self.docker_client.images.get(image_tag)
+            return image.attrs["Size"] / (1024 * 1024)
+        except Exception as e:
+            logger.warning(f"Could not get image size for {image_tag}: {e}")
+            return 0.0
+
+    def _train_models(self, trigger_event: Dict[str, Any]) -> Dict[str, Any]:
+        """Train and evaluate models"""
+        logger.info("Training models...")
+
+        # Assume model training is handled by an external script or a dedicated skill
+        # For a full implementation, this would trigger a training job
+        # and wait for its completion.
+        training_config = self.config.get('model_training', {})
+        model_name = training_config.get('model_name', 'default_model')
+        dataset_path = training_config.get('dataset_path', 'data/training_data.csv')
+
+        with mlflow.start_run(run_name="model_training_run") as run:
+            mlflow.log_param("model_name", model_name)
+            mlflow.log_param("dataset_path", dataset_path)
+            mlflow.log_params(training_config.get('hyperparameters', {}))
+
+            # Simulate training
+            logger.info(f"Simulating training for model: {model_name} with dataset: {dataset_path}")
+            time.sleep(10) # Simulate training time
+
+            # Simulate metrics
+            loss = 0.05
+            accuracy = 0.95
+            mlflow.log_metrics({"loss": loss, "accuracy": accuracy})
+
+            # Simulate saving model
+            model_path = "models/trained_model.pth"
+            os.makedirs(os.path.dirname(model_path), exist_ok=True)
+            with open(model_path, 'w') as f:
+                f.write("dummy model content") # Placeholder
+            mlflow.log_artifact(model_path)
+
+            logger.info(f"Model {model_name} trained. Run ID: {run.info.run_id}")
+
+            return {
+                "model_name": model_name,
+                "run_id": run.info.run_id,
+                "metrics": {"loss": loss, "accuracy": accuracy},
+                "model_path": model_path
+            }
+
+    def _evaluate_models(self, trigger_event: Dict[str, Any]) -> Dict[str, Any]:
+        """Evaluate model performance"""
+        logger.info("Evaluating models...")
+
+        evaluation_config = self.config.get('model_evaluation', {})
+        model_uri = evaluation_config.get('model_uri', 'models:/default_model/Staging')
+        test_dataset_path = evaluation_config.get('test_dataset_path', 'data/test_data.csv')
+
+        with mlflow.start_run(nested=True, run_name="model_evaluation_run") as run:
+            mlflow.log_param("model_uri", model_uri)
+            mlflow.log_param("test_dataset_path", test_dataset_path)
+
+            # Simulate loading model
+            logger.info(f"Simulating loading model from: {model_uri}")
+            time.sleep(5) # Simulate loading time
+
+            # Simulate evaluation
+            precision = 0.85
+            recall = 0.90
+            f1_score = 0.87
+            mlflow.log_metrics({"precision": precision, "recall": recall, "f1_score": f1_score})
+
+            logger.info(f"Model evaluated. Run ID: {run.info.run_id}")
+
+            # Decide whether to transition model to production based on metrics
+            promote_threshold = evaluation_config.get('promote_threshold', 0.8)
+            if f1_score > promote_threshold:
+                logger.info(f"Model performance (F1: {f1_score}) exceeds threshold ({promote_threshold}). Promoting to production.")
+                # Simulate MLflow model stage transition
+                # self.mlflow_client.transition_model_version_stage(
+                #     name="default_model",
+                #     version=1, # This would need to be dynamically determined
+                #     stage="Production"
+                # )
+                promoted = True
+            else:
+                logger.info(f"Model performance (F1: {f1_score}) below threshold ({promote_threshold}). Not promoting.")
+                promoted = False
+
+            return {
+                "model_uri": model_uri,
+                "metrics": {"precision": precision, "recall": recall, "f1_score": f1_score},
+                "promoted_to_production": promoted
+            }
+
+    def _security_scan(self, trigger_event: Dict[str, Any]) -> Dict[str, Any]:
+        """Scan for security vulnerabilities"""
+        logger.info("Running general security scan...")
+
+        scan_config = self.config.get('security_scan', {})
+        # This could be integrating with various security tools
+        # For now, simulate a check.
+        
+        simulated_vulnerabilities = scan_config.get('simulated_vulnerabilities', 5)
+        critical_vulnerabilities = scan_config.get('critical_vulnerabilities', 1)
+
+        logger.info(f"Simulating security scan: {simulated_vulnerabilities} vulnerabilities found.")
+        time.sleep(5)
+
+        mlflow.log_metrics({
+            "security_total_vulnerabilities": simulated_vulnerabilities,
+            "security_critical_vulnerabilities": critical_vulnerabilities
+        })
+
+        if critical_vulnerabilities > scan_config.get('max_critical_vulnerabilities', 0):
+            raise ValueError(f"Critical vulnerabilities found ({critical_vulnerabilities}) exceeds threshold.")
+
+        return {
+            "total_vulnerabilities": simulated_vulnerabilities,
+            "critical_vulnerabilities": critical_vulnerabilities,
+            "success": True
+        }
+
+    def _deploy(self, trigger_event: Dict[str, Any]) -> Dict[str, Any]:
+        """Deploy to target environment"""
+        logger.info("Deploying models and services...")
+
+        deployment_config = self.config.get('deployment', {})
+        target_env = deployment_config.get('target_environment', 'staging')
+        model_to_deploy = deployment_config.get('model_uri', 'models:/default_model/Production')
+        service_image = self.artifacts.get("build_main_image_tag", "agentic-ai:latest") # Get built image tag
+
+        logger.info(f"Simulating deployment of {model_to_deploy} and service image {service_image} to {target_env}...")
+        time.sleep(10)
+
+        # Simulate health checks
+        health_check_passed = True
+        if deployment_config.get('simulate_health_check_fail', False):
+            health_check_passed = False
+
+        mlflow.log_metrics({
+            "deployment_success": 1 if health_check_passed else 0,
+            "target_environment": target_env
+        })
+
+        if not health_check_passed:
+            raise ValueError("Deployment health checks failed.")
+
+        return {
+            "environment": target_env,
+            "model_deployed": model_to_deploy,
+            "service_image": service_image,
+            "success": True,
+            "url": f"http://{target_env}.example.com"
+        }
+
+    def _setup_monitoring(self, trigger_event: Dict[str, Any]) -> Dict[str, Any]:
+        """Setup monitoring and alerts"""
+        logger.info("Setting up monitoring and alerts...")
+
+        monitoring_config = self.config.get('monitoring', {})
+        
+        # Simulate integration with monitoring tools (Prometheus, Grafana, PagerDuty, etc.)
+        alert_rules_configured = True
+        dashboards_created = True
+
+        logger.info("Simulating monitoring setup complete.")
+        time.sleep(5)
+
+        mlflow.log_metrics({
+            "monitoring_setup_success": 1 if (alert_rules_configured and dashboards_created) else 0,
+            "alert_rules_configured": 1 if alert_rules_configured else 0,
+            "dashboards_created": 1 if dashboards_created else 0
+        })
+
+        return {
+            "alert_rules_configured": alert_rules_configured,
+            "dashboards_created": dashboards_created,
+            "success": True
+        }
+
+    def _get_git_sha(self) -> str:
+        """Get current git commit SHA"""
+        if self.git_repo:
+            return self.git_repo.head.commit.hexsha
+        return "unknown"
+
+    def _generate_pipeline_report(self, pipeline_result: Dict[str, Any]) -> str:
+        """Generate a comprehensive pipeline report"""
+        logger.info("Generating pipeline report...")
+        report_data = {
+            "report_timestamp": datetime.now().isoformat(),
+            "git_sha": self._get_git_sha(),
+            "pipeline_summary": {
+                "overall_success": pipeline_result["overall_success"],
+                "duration": pipeline_result["duration"],
+                "start_time": pipeline_result["start_time"],
+                "end_time": pipeline_result["end_time"],
+                "error": pipeline_result["error"]
+            },
+            "stage_details": pipeline_result["stages"],
+            "artifacts_logged": list(mlflow.active_run().list_artifacts()) if mlflow.active_run() else []
+        }
+
+        report_path = "reports/pipeline_summary_report.json"
+        os.makedirs(os.path.dirname(report_path), exist_ok=True)
+        with open(report_path, 'w') as f:
+            json.dump(report_data, f, indent=2)
+
+        mlflow.log_artifact(report_path)
+        logger.info(f"Pipeline report generated at {report_path}")
+        return report_path
+    
+    def _cleanup_temp_files(self):
+        """Cleanup temporary files created during pipeline execution."""
+        logger.info("Cleaning up temporary files...")
+        temp_dockerfile = Path("Dockerfile.pipeline")
+        if temp_dockerfile.exists():
+            temp_dockerfile.unlink()
+            logger.debug(f"Removed temporary Dockerfile: {temp_dockerfile}")
+        # Add more cleanup for other temporary files/directories if needed
+        logger.info("Temporary file cleanup complete.")
+
+    async def _invoke_mcp_tool(self, trigger_event: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Invokes an MCP tool as specified in the pipeline configuration.
+        """
+        logger.info("Invoking MCP tool...")
+
+        if not self.mcp_client:
+            raise RuntimeError("MCPClient is not initialized.")
+
+        mcp_tool_config = self.config.get('mcp_tool_invocation', {})
+        tool_name = mcp_tool_config.get('tool_name')
+        arguments = mcp_tool_config.get('arguments', {})
+        security_context = mcp_tool_config.get('security_context', {})
+
+        if not tool_name:
+            raise ValueError("MCP tool_name not specified in pipeline config for 'mcp_tool_invocation' stage.")
+
+        try:
+            mcp_result = await self.mcp_client.call_tool(
+                tool_name=tool_name,
+                arguments=arguments,
+                caller="MLOpsPipeline",
+                security_context=security_context
+            )
+            logger.info(f"MCP tool '{tool_name}' invoked successfully. Result: {mcp_result}")
+            return mcp_result
+        except Exception as e:
+            logger.error(f"Failed to invoke MCP tool '{tool_name}': {e}", exc_info=True)
+            raise

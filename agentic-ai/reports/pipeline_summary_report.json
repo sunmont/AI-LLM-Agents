@@ -1,0 +1,19 @@
+{
+  "report_timestamp": "2026-01-13T14:14:06.280196",
+  "git_sha": "testsha",
+  "pipeline_summary": {
+    "overall_success": false,
+    "duration": 36.759203,
+    "start_time": "2026-01-13T14:13:29.520886",
+    "end_time": "2026-01-13T14:14:06.280089",
+    "error": "Stage code_quality failed"
+  },
+  "stage_details": {
+    "code_quality": {
+      "success": false,
+      "execution_time": 26.757053,
+      "error": "Code quality score 79.0 below threshold 80"
+    }
+  },
+  "artifacts_logged": []
+}

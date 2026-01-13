@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-01-13T14:13:18.885680",
+  "pass_rate": 0,
+  "total_tests": 0,
+  "passed_tests": 0,
+  "failed_tests": 0,
+  "coverage": {
+    "line_coverage": 37.44,
+    "branch_coverage": 0.0,
+    "total_lines": 772,
+    "covered_lines": 289
+  },
+  "test_results": [
+    {
+      "type": "e2e",
+      "success": false,
+      "tests_run": 0,
+      "tests_passed": 0,
+      "tests_failed": 0,
+      "output": "",
+      "error": "ERROR: usage: pytest [options] [file_or_dir] [file_or_dir] [...]\npytest: error: unrecognized arguments: --numprocesses=auto\n  inifile: D:\\msys64\\home\\sunde\\agentic-ai\\pyproject.toml\n  rootdir: D:\\msys64\\home\\sunde\\agentic-ai\n\n"
+    },
+    {
+      "type": "e2e",
+      "success": false,
+      "tests_run": 0,
+      "tests_passed": 0,
+      "tests_failed": 0,
+      "output": "",
+      "error": "ERROR: usage: pytest [options] [file_or_dir] [file_or_dir] [...]\npytest: error: unrecognized arguments: --timeout=300\n  inifile: D:\\msys64\\home\\sunde\\agentic-ai\\pyproject.toml\n  rootdir: D:\\msys64\\home\\sunde\\agentic-ai\n\n"
+    },
+    {
+      "type": "e2e",
+      "success": false,
+      "tests_run": 0,
+      "tests_passed": 0,
+      "tests_failed": 0,
+      "output": "",
+      "error": "ERROR: usage: pytest [options] [file_or_dir] [file_or_dir] [...]\npytest: error: unrecognized arguments: --timeout=600\n  inifile: D:\\msys64\\home\\sunde\\agentic-ai\\pyproject.toml\n  rootdir: D:\\msys64\\home\\sunde\\agentic-ai\n\n"
+    }
+  ]
+}

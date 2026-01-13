@@ -18,12 +18,16 @@ sop_skill = SOPExecutorSkill(config={
 orchestrator.register_skill(sop_skill)
 
 # Execute workflow
-result = orchestrator.execute({
+task_payload = {
     "task": "Perform quality check on product batch #123",
     "parameters": {
         "batch_id": "123",
         "checks": ["dimensions", "weight", "labeling"]
     }
-})
+}
+result = orchestrator.execute(
+    task=task_payload["task"],
+    context=task_payload
+)
 
 print(f"Result: {result}")

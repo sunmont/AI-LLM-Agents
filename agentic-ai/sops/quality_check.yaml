@@ -1,0 +1,50 @@
+name: Product Quality Check SOP
+description: A Standard Operating Procedure for checking the quality of a product batch.
+version: 1.0.0
+
+steps:
+  - id: step_1_dimensions
+    name: Check Dimensions
+    description: "Verify product dimensions are within tolerance."
+    tool: "measurement_tool"
+    parameters:
+      product_id: "{{ context.parameters.batch_id }}"
+      dimension_spec_id: "dim_spec_xyz"
+    outputs:
+      - name: dimension_check_result
+        value: "{{ tool_output.status }}"
+
+  - id: step_2_weight
+    name: Check Weight
+    description: "Verify product weight is within tolerance."
+    tool: "weighing_scale_tool"
+    parameters:
+      product_id: "{{ context.parameters.batch_id }}"
+      weight_spec_id: "w_spec_abc"
+    outputs:
+      - name: weight_check_result
+        value: "{{ tool_output.status }}"
+
+  - id: step_3_labeling
+    name: Check Labeling
+    description: "Ensure product labeling is correct and legible."
+    tool: "visual_inspection_tool"
+    parameters:
+      product_id: "{{ context.parameters.batch_id }}"
+      label_template_id: "label_v2"
+    outputs:
+      - name: labeling_check_result
+        value: "{{ tool_output.status }}"
+
+  - id: step_4_summary
+    name: Summarize Results
+    description: "Compile a summary of all quality checks."
+    tool: "reporting_tool"
+    parameters:
+      results:
+        dimensions: "{{ steps.step_1_dimensions.outputs.dimension_check_result }}"
+        weight: "{{ steps.step_2_weight.outputs.weight_check_result }}"
+        labeling: "{{ steps.step_3_labeling.outputs.labeling_check_result }}"
+    outputs:
+      - name: final_report
+        value: "{{ tool_output.report_url }}"

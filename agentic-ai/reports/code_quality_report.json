@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-01-13T14:13:56.277161",
+  "quality_score": 79.0,
+  "total_issues": 126,
+  "checks": {
+    "pylint": {
+      "success": false,
+      "issue_count": 0,
+      "output": "",
+      "error": "The config file .pylintrc doesn't exist!\n"
+    },
+    "mypy": {
+      "success": false,
+      "issue_count": 2,
+      "output": "src\\models\\finetuning\\trainer.py:686: error: Unterminated triple-quoted f-string literal (detected at line 717)  [syntax]\n",
+      "error": ""
+    },
+    "bandit": {
+      "success": false,
+      "error": "[WinError 2] The system cannot find the file specified",
+      "issue_count": 0
+    },
+    "black": {
+      "success": false,
+      "issue_count": 123,
+      "output": "--- D:\\msys64\\home\\sunde\\agentic-ai\\src\\memory\\memory_manager.py\t2026-01-13 18:41:57.894059+00:00\n+++ D:\\msys64\\home\\sunde\\agentic-ai\\src\\memory\\memory_manager.py\t2026-01-13 19:13:53.666194+00:00\n@@ -1,22 +1,27 @@\n \"\"\"\n Placeholder for Memory Management\n \"\"\"\n+\n import logging\n from typing import Dict, Any, Optional\n from .file_memory_backend import FileMemoryBackend\n \n logger = logging.getLogger(__name__)\n \n+\n class MemoryManager:\n     \"\"\"\n     Manages conversational and task-related memory, with support for\n     persistent storage through a configurable backend.\n     \"\"\"\n+\n     def __init__(self, backend: Optional[Any] = None):\n         self.backend = backend if backend else FileMemoryBackend()\n-        logger.info(f\"Initialized MemoryManager with backend: {type(self.backend).__name__}.\")\n+        logger.info(\n+            f\"Initialized MemoryManager with backend: {type(self.backend).__name__}.\"\n+        )\n \n     def retrieve(self, thread_id: str) -> Dict:\n         \"\"\"\n         Retrie",
+      "error": "would reformat D:\\msys64\\home\\sunde\\agentic-ai\\src\\memory\\memory_manager.py\nwould reformat D:\\msys64\\home\\sunde\\agentic-ai\\src\\agents\\task_decomposer.py\nwould reformat D:\\msys64\\home\\sunde\\agentic-ai\\src\\memory\\file_memory_backend.py\nwould reformat D:\\msys64\\home\\sunde\\agentic-ai\\src\\agents\\validator.py\nwould reformat D:\\msys64\\home\\sunde\\agentic-ai\\src\\workflows\\human_in_loop.py\nwould reformat D:\\msys64\\home\\sunde\\agentic-ai\\src\\skills\\sop_executor.py\nwould reformat D:\\msys64\\home\\sunde\\agentic-ai\\src\\skills\\skill_executor.py\nwould reformat D:\\msys64\\home\\sunde\\agentic-ai\\src\\skills\\skill_router.py\nerror: cannot format D:\\msys64\\home\\sunde\\agentic-ai\\src\\models\\finetuning\\trainer.py: Cannot parse for target version Python 3.9: 717:43: Unexpected EOF in multi-line statement\nwould reformat D:\\msys64\\home\\sunde\\agentic-ai\\src\\agents\\orchestrator.py\nwould reformat D:\\msys64\\home\\sunde\\agentic-ai\\src\\skills\\base_skill.py\nwould reformat D:\\msys64\\home\\sunde\\agentic-ai\\src\\mcp\\mcp_client.py\n"
+    },
+    "isort": {
+      "success": false,
+      "issue_count": 1,
+      "output": "--- D:\\msys64\\home\\sunde\\agentic-ai\\src\\agents\\orchestrator.py:before\t2026-01-13 11:55:42.498278\n+++ D:\\msys64\\home\\sunde\\agentic-ai\\src\\agents\\orchestrator.py:after\t2026-01-13 14:13:56.041654\n@@ -1,20 +1,21 @@\n \"\"\"\n\n LangGraph-based agent orchestration system with task decomposition and memory management\n\n \"\"\"\n\n-from typing import Dict, List, Any, Optional, TypedDict, Callable\n\n-from typing_extensions import Annotated # Added import\n\n-import operator # Added import\n\n-from langgraph.graph import StateGraph, END\n\n+import asyncio\n\n+import json\n\n+import logging\n\n+import operator  # Added import\n\n+from dataclasses import dataclass\n\n+from datetime import datetime\n\n+from typing import Any, Callable, Dict, List, Optional, TypedDict\n\n+\n\n+import networkx as nx\n\n+from langchain_community.tools import Tool\n\n+from langchain_core.messages import BaseMessage, HumanMessage, SystemMessage\n\n from langgraph.checkpoint.memory import InMemorySaver\n\n-from langchain_core.messages import HumanMessage, System",
+      "error": "ERROR: D:\\msys64\\home\\sunde\\agentic-ai\\src\\agents\\orchestrator.py Imports are incorrectly sorted and/or formatted.\nERROR: D:\\msys64\\home\\sunde\\agentic-ai\\src\\agents\\task_decomposer.py Imports are incorrectly sorted and/or formatted.\nERROR: D:\\msys64\\home\\sunde\\agentic-ai\\src\\agents\\validator.py Imports are incorrectly sorted and/or formatted.\nERROR: D:\\msys64\\home\\sunde\\agentic-ai\\src\\mcp\\mcp_client.py Imports are incorrectly sorted and/or formatted.\nERROR: D:\\msys64\\home\\sunde\\agentic-ai\\src\\memory\\file_memory_backend.py Imports are incorrectly sorted and/or formatted.\nERROR: D:\\msys64\\home\\sunde\\agentic-ai\\src\\memory\\memory_manager.py Imports are incorrectly sorted and/or formatted.\nERROR: D:\\msys64\\home\\sunde\\agentic-ai\\src\\mlops\\pipeline.py Imports are incorrectly sorted and/or formatted.\nERROR: D:\\msys64\\home\\sunde\\agentic-ai\\src\\models\\finetuning\\trainer.py Imports are incorrectly sorted and/or formatted.\nERROR: D:\\msys64\\home\\sunde\\agentic-ai\\src\\skills\\base_skill.py Imports are"
+    },
+    "flake8": {
+      "success": false,
+      "error": "[WinError 2] The system cannot find the file specified",
+      "issue_count": 0
+    }
+  }
+}

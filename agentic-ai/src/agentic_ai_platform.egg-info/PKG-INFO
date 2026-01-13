@@ -1,0 +1,95 @@
+Metadata-Version: 2.4
+Name: agentic-ai-platform
+Version: 0.1.0
+Summary: Agentic AI Orchestration Platform with LangGraph and MCP
+Author-email: Your Name <your.email@example.com>
+Project-URL: Homepage, https://github.com/yourusername/agentic-ai-platform
+Project-URL: Documentation, https://github.com/yourusername/agentic-ai-platform#readme
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: langchain>=0.1.0
+Requires-Dist: langgraph>=0.0.30
+Requires-Dist: langchain-community>=0.0.10
+Requires-Dist: mcp>=0.1.0
+Requires-Dist: transformers>=4.35.0
+Requires-Dist: torch>=2.0.0
+Requires-Dist: trl>=0.7.0
+Requires-Dist: peft>=0.6.0
+Requires-Dist: datasets>=2.14.0
+Requires-Dist: mlflow>=2.8.0
+Requires-Dist: fastapi>=0.104.0
+Requires-Dist: uvicorn>=0.24.0
+Requires-Dist: docker>=6.1.0
+Requires-Dist: pydantic>=2.5.0
+Requires-Dist: networkx>=3.0
+Requires-Dist: httpx>=0.25.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: jinja2>=3.1.0
+Requires-Dist: pytest>=7.4.0
+Requires-Dist: pytest-cov>=4.1.0
+Requires-Dist: black>=23.0
+Requires-Dist: mypy>=1.5.0
+Requires-Dist: pylint>=3.0.0
+Requires-Dist: wandb>=0.15.0
+Provides-Extra: dev
+Requires-Dist: jupyter>=1.0.0; extra == "dev"
+Requires-Dist: ipykernel>=6.0; extra == "dev"
+Requires-Dist: pre-commit>=3.5.0; extra == "dev"
+Provides-Extra: gpu
+Requires-Dist: torch>=2.0.0; extra == "gpu"
+Requires-Dist: nvidia-cublas-cu12; extra == "gpu"
+Requires-Dist: nvidia-cuda-nvrtc-cu12; extra == "gpu"
+Provides-Extra: aws
+Requires-Dist: boto3>=1.28.0; extra == "aws"
+Requires-Dist: sagemaker>=2.190.0; extra == "aws"
+
+# Agentic AI Orchestration Platform
+
+A comprehensive platform for building, deploying, and managing agentic AI systems using LangGraph, LlamaIndex Agents, and Model Context Protocol (MCP).
+
+## Features
+
+### Core Orchestration
+- **LangGraph-based workflow orchestration** with state management
+- **Task decomposition** and parallel execution
+- **Human-in-the-loop workflows** with approval gates
+- **Conversation memory** and knowledge graph integration
+
+### Agent Skills
+- **Modular, reusable skills** for domain-specific tasks
+- **SOP execution** with compliance tracking
+- **Multi-step task automation** with validation
+- **Tool invocation** with standardized interfaces
+
+### MCP Integration
+- **Standardized tool access** through Model Context Protocol
+- **Multi-agent coordination** for complex tasks
+- **Secure service integration** with audit logging
+- **External data source connectivity**
+
+### Model Optimization
+- **Fine-tuning** with TRL (SFT, DPO, PPO)
+- **GRPO-based reinforcement learning** for task alignment
+- **Performance optimization** and evaluation
+- **Model comparison** and versioning
+
+### MLOps Infrastructure
+- **CI/CD pipelines** for AI services
+- **Docker containerization** with GPU support
+- **MLflow model registry** and experiment tracking
+- **Infrastructure-as-code** deployment (Terraform, Kubernetes)
+
+## Quick Start
+
+### Prerequisites
+- Python 3.9+
+- Docker and Docker Compose
+- NVIDIA GPU (optional, for training)
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/agentic-ai-platform.git
+cd agentic-ai-platform
