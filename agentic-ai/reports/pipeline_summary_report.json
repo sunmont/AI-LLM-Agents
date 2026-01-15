@@ -1,18 +1,23 @@
 {
-  "report_timestamp": "2026-01-13T14:14:06.280196",
+  "report_timestamp": "2026-01-13T14:39:03.958818",
   "git_sha": "testsha",
   "pipeline_summary": {
     "overall_success": false,
-    "duration": 36.759203,
-    "start_time": "2026-01-13T14:13:29.520886",
-    "end_time": "2026-01-13T14:14:06.280089",
-    "error": "Stage code_quality failed"
+    "duration": 10.002184,
+    "start_time": "2026-01-13T14:38:53.956228",
+    "end_time": "2026-01-13T14:39:03.958412",
+    "error": "Stage mcp_tool_invocation failed"
   },
   "stage_details": {
-    "code_quality": {
+    "monitoring": {
+      "success": true,
+      "execution_time": 0.000507,
+      "error": null
+    },
+    "mcp_tool_invocation": {
       "success": false,
-      "execution_time": 26.757053,
-      "error": "Code quality score 79.0 below threshold 80"
+      "execution_time": 10.001175,
+      "error": "MCPClient is not initialized."
     }
   },
   "artifacts_logged": []

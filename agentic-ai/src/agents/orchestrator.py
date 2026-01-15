@@ -1,6 +1,3 @@
-"""
-LangGraph-based agent orchestration system with task decomposition and memory management
-"""
 from typing import Dict, List, Any, Optional, TypedDict, Callable
 from typing_extensions import Annotated # Added import
 import operator # Added import
@@ -15,6 +12,13 @@ from datetime import datetime
 import asyncio
 from dataclasses import dataclass
 import logging
+
+from ..skills.skill_router import SkillRouter # Moved from _planner_agent
+from .task_decomposer import TaskDecomposer # Moved from _decomposer_agent
+from ..skills.skill_executor import SkillExecutor # Moved from _executor_agent
+from .validator import ResultValidator # Moved from _validator_agent
+from ..workflows.human_in_loop import HumanReviewWorkflow # Moved from _human_review_node
+from ..memory.memory_manager import MemoryManager # Moved from _retrieve_memory and _update_memory
 
 logger = logging.getLogger(__name__)
 
@@ -55,6 +59,7 @@ class AgenticOrchestrator:
         self.agent_nodes: Dict[str, Callable] = {}
         self._setup_logging()
         self._setup_workflow()
+
 
     def _setup_logging(self):
         """Setup logging configuration"""
@@ -150,7 +155,7 @@ class AgenticOrchestrator:
         }
 
         # Route to appropriate skills
-        router = SkillRouter(self.skills_registry)
+        router = SkillRouter()
         skill_plan = router.create_plan(task, context)
 
         return {
@@ -195,7 +200,7 @@ class AgenticOrchestrator:
 
         logger.info("Executor agent running skills")
 
-        executor = SkillExecutor(self.skills_registry, self.tools_registry)
+        executor = SkillExecutor()
         results = []
 
         for subtask in state.get("subtasks", []):
@@ -541,10 +546,17 @@ class AgenticOrchestrator:
             return {}
 
     def _update_memory(self, thread_id: str, state: Dict):
-        """Update memory with execution results"""
+        """Update memory with execution results, ensuring messages are JSON serializable"""
         from ..memory.memory_manager import MemoryManager
         try:
-            MemoryManager().update(thread_id, state)
+            # Convert BaseMessage objects to dictionary for JSON serialization
+            serializable_state = state.copy()
+            if "messages" in serializable_state:
+                serializable_state["messages"] = [
+                    msg.dict() if isinstance(msg, BaseMessage) else msg
+                    for msg in serializable_state["messages"]
+                ]
+            MemoryManager().update(thread_id, serializable_state)
         except Exception as e:
             logger.warning(f"Failed to update memory for {thread_id}: {e}")
 

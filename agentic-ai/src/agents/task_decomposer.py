@@ -26,7 +26,7 @@ class TaskDecomposer:
         self.llm_chain = self.decomposition_prompt | self.llm | self.output_parser
         logger.info("Initialized TaskDecomposer with LLM-based decomposition.")
 
-    def decompose(self, task: str, context: Dict[str, Any]) -> List[Dict[str, Any]]:
+    def decompose(self, task: str, context: Dict[str, Any], plan: Dict[str, Any]) -> List[Dict[str, Any]]:
         """
         Decomposes a task into subtasks using an LLM or SOPs.
         """
@@ -39,7 +39,7 @@ class TaskDecomposer:
 
         # LLM-based decomposition
         try:
-            llm_output = self.llm_chain.invoke({"task": task, "context": context})
+            llm_output = self.llm_chain.invoke({"task": task, "context": context, "plan": plan})
 
             if isinstance(llm_output, list):
                 for i, subtask_data in enumerate(llm_output):

@@ -1,0 +1,4508 @@
+{
+    "messages": [
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Decomposer done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Decomposer done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Executor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Decomposer done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Simple task, retrieve some basic data.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Decomposer done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Executor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Compiler done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        }
+    ],
+    "task": "Simple task, retrieve some basic data.",
+    "subtasks": [
+        {
+            "id": "subtask_1",
+            "description": "mock subtask",
+            "skill": "data_retrieval_skill"
+        }
+    ],
+    "results": [
+        {
+            "subtask": {
+                "id": "subtask_1"
+            },
+            "status": "success",
+            "output": {
+                "retrieved_data": "mock_data"
+            },
+            "duration": 0.1
+        }
+    ],
+    "output": {
+        "task": "Simple task, retrieve some basic data.",
+        "results": [
+            {
+                "subtask": {
+                    "id": "subtask_1"
+                },
+                "status": "success",
+                "output": {
+                    "retrieved_data": "mock_data"
+                },
+                "duration": 0.1
+            }
+        ],
+        "validation": {},
+        "metadata": {
+            "steps_completed": "compiler",
+            "success_rate": 0.0,
+            "subtasks_count": 1
+        }
+    },
+    "context": {
+        "user": "test"
+    },
+    "memory": {
+        "messages": [
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Planner done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Planner done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Decomposer done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Planner done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Planner done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Decomposer done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Executor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Planner done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Planner done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Decomposer done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Planner done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Simple task, retrieve some basic data.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Planner done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Decomposer done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Executor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Compiler done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            }
+        ],
+        "task": "Simple task, retrieve some basic data.",
+        "subtasks": [
+            {
+                "id": "s1",
+                "description": "mock subtask",
+                "skill": "data_retrieval_skill"
+            }
+        ],
+        "results": [
+            {
+                "subtask": {
+                    "id": "s1"
+                },
+                "status": "success",
+                "output": {
+                    "data": "mock_result"
+                }
+            }
+        ],
+        "output": {
+            "task": "Simple task, retrieve some basic data.",
+            "results": [
+                {
+                    "subtask": {
+                        "id": "s1"
+                    },
+                    "status": "success",
+                    "output": {
+                        "data": "mock_result"
+                    }
+                }
+            ],
+            "validation": {},
+            "metadata": {
+                "steps_completed": "compiler",
+                "success_rate": 0.0,
+                "subtasks_count": 1
+            }
+        },
+        "context": {
+            "user": "test"
+        },
+        "memory": {
+            "messages": [
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task decomposed into 1 subtasks",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task decomposed into 1 subtasks",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Executed 1 subtasks",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task decomposed into 1 subtasks",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Simple task, retrieve some basic data.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task decomposed into 1 subtasks",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Executed 1 subtasks",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Final output compiled successfully",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                }
+            ],
+            "task": "Simple task, retrieve some basic data.",
+            "subtasks": [
+                {
+                    "id": "subtask_1_default_error",
+                    "description": "Perform general task for: 'Simple task, retrieve some basic data.' (Decomposition error)",
+                    "status": "pending",
+                    "expected_skill": "general_purpose_skill",
+                    "input_data": {
+                        "main_task": "Simple task, retrieve some basic data.",
+                        "context": {
+                            "user": "test"
+                        }
+                    }
+                }
+            ],
+            "results": [
+                {
+                    "subtask": {
+                        "id": "subtask_1_default_error",
+                        "description": "Perform general task for: 'Simple task, retrieve some basic data.' (Decomposition error)",
+                        "status": "pending",
+                        "expected_skill": "general_purpose_skill",
+                        "input_data": {
+                            "main_task": "Simple task, retrieve some basic data.",
+                            "context": {
+                                "user": "test"
+                            }
+                        }
+                    },
+                    "status": "failed",
+                    "error": "Skill 'None' not found.",
+                    "duration": 0.0002484321594238281,
+                    "timestamp": 1768335508.1910906
+                }
+            ],
+            "output": {
+                "task": "Simple task, retrieve some basic data.",
+                "results": [
+                    {
+                        "subtask": {
+                            "id": "subtask_1_default_error",
+                            "description": "Perform general task for: 'Simple task, retrieve some basic data.' (Decomposition error)",
+                            "status": "pending",
+                            "expected_skill": "general_purpose_skill",
+                            "input_data": {
+                                "main_task": "Simple task, retrieve some basic data.",
+                                "context": {
+                                    "user": "test"
+                                }
+                            }
+                        },
+                        "status": "failed",
+                        "error": "Skill 'None' not found.",
+                        "duration": 0.0002484321594238281,
+                        "timestamp": 1768335508.1910906
+                    }
+                ],
+                "validation": {},
+                "human_feedback": {},
+                "metadata": {
+                    "execution_time": "2026-01-13T15:18:28.195063",
+                    "steps_completed": "executor",
+                    "subtasks_count": 1,
+                    "success_rate": 0.0
+                }
+            },
+            "context": {
+                "user": "test"
+            },
+            "memory": {
+                "messages": [
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task decomposed into 1 subtasks",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task decomposed into 1 subtasks",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Executed 1 subtasks",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task decomposed into 1 subtasks",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Simple task, retrieve some basic data.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task decomposed into 1 subtasks",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Executed 1 subtasks",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Final output compiled successfully",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    }
+                ],
+                "task": "Simple task, retrieve some basic data.",
+                "subtasks": [
+                    {
+                        "id": "subtask_1_default_error",
+                        "description": "Perform general task for: 'Simple task, retrieve some basic data.' (Decomposition error)",
+                        "status": "pending",
+                        "expected_skill": "general_purpose_skill",
+                        "input_data": {
+                            "main_task": "Simple task, retrieve some basic data.",
+                            "context": {
+                                "user": "test"
+                            }
+                        }
+                    }
+                ],
+                "results": [
+                    {
+                        "subtask": {
+                            "id": "subtask_1_default_error",
+                            "description": "Perform general task for: 'Simple task, retrieve some basic data.' (Decomposition error)",
+                            "status": "pending",
+                            "expected_skill": "general_purpose_skill",
+                            "input_data": {
+                                "main_task": "Simple task, retrieve some basic data.",
+                                "context": {
+                                    "user": "test"
+                                }
+                            }
+                        },
+                        "status": "failed",
+                        "error": "Skill 'None' not found.",
+                        "duration": 0.0001380443572998047,
+                        "timestamp": 1768334234.8562615
+                    }
+                ],
+                "output": {
+                    "task": "Simple task, retrieve some basic data.",
+                    "results": [
+                        {
+                            "subtask": {
+                                "id": "subtask_1_default_error",
+                                "description": "Perform general task for: 'Simple task, retrieve some basic data.' (Decomposition error)",
+                                "status": "pending",
+                                "expected_skill": "general_purpose_skill",
+                                "input_data": {
+                                    "main_task": "Simple task, retrieve some basic data.",
+                                    "context": {
+                                        "user": "test"
+                                    }
+                                }
+                            },
+                            "status": "failed",
+                            "error": "Skill 'None' not found.",
+                            "duration": 0.0001380443572998047,
+                            "timestamp": 1768334234.8562615
+                        }
+                    ],
+                    "validation": {},
+                    "human_feedback": {},
+                    "metadata": {
+                        "execution_time": "2026-01-13T14:57:14.858697",
+                        "steps_completed": "executor",
+                        "subtasks_count": 1,
+                        "success_rate": 0.0
+                    }
+                },
+                "context": {
+                    "user": "test"
+                },
+                "memory": {
+                    "messages": [
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task decomposed into 1 subtasks",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task decomposed into 1 subtasks",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Executed 1 subtasks",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task decomposed into 1 subtasks",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Simple task, retrieve some basic data.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Execution plan created: {\n  \"objective\": \"Simple task, retrieve some basic data.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task decomposed into 1 subtasks",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Executed 1 subtasks",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Final output compiled successfully",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        }
+                    ],
+                    "task": "Simple task, retrieve some basic data.",
+                    "subtasks": [
+                        {
+                            "id": "subtask_1_default_error",
+                            "description": "Perform general task for: 'Simple task, retrieve some basic data.' (Decomposition error)",
+                            "status": "pending",
+                            "expected_skill": "general_purpose_skill",
+                            "input_data": {
+                                "main_task": "Simple task, retrieve some basic data.",
+                                "context": {
+                                    "user": "test"
+                                }
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "subtask": {
+                                "id": "subtask_1_default_error",
+                                "description": "Perform general task for: 'Simple task, retrieve some basic data.' (Decomposition error)",
+                                "status": "pending",
+                                "expected_skill": "general_purpose_skill",
+                                "input_data": {
+                                    "main_task": "Simple task, retrieve some basic data.",
+                                    "context": {
+                                        "user": "test"
+                                    }
+                                }
+                            },
+                            "status": "failed",
+                            "error": "Skill 'None' not found.",
+                            "duration": 0.00011134147644042969,
+                            "timestamp": 1768333970.4365184
+                        }
+                    ],
+                    "output": {
+                        "task": "Simple task, retrieve some basic data.",
+                        "results": [
+                            {
+                                "subtask": {
+                                    "id": "subtask_1_default_error",
+                                    "description": "Perform general task for: 'Simple task, retrieve some basic data.' (Decomposition error)",
+                                    "status": "pending",
+                                    "expected_skill": "general_purpose_skill",
+                                    "input_data": {
+                                        "main_task": "Simple task, retrieve some basic data.",
+                                        "context": {
+                                            "user": "test"
+                                        }
+                                    }
+                                },
+                                "status": "failed",
+                                "error": "Skill 'None' not found.",
+                                "duration": 0.00011134147644042969,
+                                "timestamp": 1768333970.4365184
+                            }
+                        ],
+                        "validation": {},
+                        "human_feedback": {},
+                        "metadata": {
+                            "execution_time": "2026-01-13T14:52:50.439059",
+                            "steps_completed": "executor",
+                            "subtasks_count": 1,
+                            "success_rate": 0.0
+                        }
+                    },
+                    "context": {
+                        "user": "test"
+                    },
+                    "memory": {},
+                    "current_step": "compiler",
+                    "error": null
+                },
+                "current_step": "compiler",
+                "error": null
+            },
+            "current_step": "compiler",
+            "error": null
+        },
+        "current_step": "compiler",
+        "error": null
+    },
+    "current_step": "compiler",
+    "error": null
+}

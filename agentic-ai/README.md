@@ -43,7 +43,46 @@ A comprehensive platform for building, deploying, and managing agentic AI system
 
 ### Installation
 
-1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/agentic-ai-platform.git
 cd agentic-ai-platform
+
+   * Core Technologies: Python, LangGraph for workflow orchestration, FastAPI for the API, and Docker for containerization.
+   * Features: The platform supports task decomposition, human-in-the-loop workflows, and modular "skills" for agents. It also includes a full MLOps infrastructure   
+     with MLflow for experiment tracking, and Grafana/Prometheus for monitoring.
+   * MCP Integration: The project integrates with the Model Context Protocol (MCP) for standardized tool access and multi-agent coordination.
+
+  Setup and Development
+
+   1. Create a virtual environment:
+
+      This project uses a virtual environment to manage its dependencies.
+
+   1     python -m venv .venv
+   2     source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+
+   2. Install dependencies:
+
+      The project uses pip to install dependencies from pyproject.toml. For development, you should install the dev dependencies.
+
+   1     pip install -e ".[dev]"                                                                                                                                      
+
+   3. Run the development server:
+
+      The project uses FastAPI and Uvicorn to provide a development server. The main application seems to be in a file that is not visible in the file tree, but based
+  on the context, the command to run it would be:
+
+   1     uvicorn src.main:app --reload --port 8080
+
+      You can now access the API at http://localhost:8080.
+
+   4. Running Tests and Linters:
+
+      The project is set up with pytest for testing, black for code formatting, and mypy for type checking.
+
+       * Run tests:
+   1         pytest
+       * Format code:
+   1         black .
+       * Check types:
+   1         mypy .

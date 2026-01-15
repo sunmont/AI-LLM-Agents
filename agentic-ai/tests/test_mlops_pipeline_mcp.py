@@ -57,19 +57,28 @@ def mock_mcp_client():
 
 @pytest.fixture
 def mlops_pipeline_with_mcp(dummy_config_file, mock_mcp_client):
-    """Provides an MLOpsPipeline instance with a mocked MCPClient and a mocked code_quality stage."""
-    # Mock _run_code_quality_checks to always pass
-    with patch('src.mlops.pipeline.MLOpsPipeline._run_code_quality_checks') as mock_code_quality:
-        mock_code_quality.return_value = {
-            "quality_score": 100.0,
-            "total_issues": 0,
-            "checks": {},
-            "report_path": "mock_code_quality_report.json"
-        }
+    """Provides an MLOpsPipeline instance with a mocked MCPClient and a mocked setup_stages."""
+    
+    # Patch _setup_stages to prevent it from adding default stages during __init__
+    with patch('src.mlops.pipeline.MLOpsPipeline._setup_stages'):
+        # Create a real MLOpsPipeline instance
         pipeline = MLOpsPipeline(config_path=dummy_config_file, mcp_client=mock_mcp_client)
-        # Ensure _get_git_repo doesn't cause issues in tests
+        
+        # Manually ensure _get_git_repo doesn't cause issues in tests
         pipeline.git_repo = MagicMock()
         pipeline.git_repo.head.commit.hexsha = "testsha"
+        
+        # Manually add a dummy 'monitoring' stage (if 'mcp_tool_invocation' depends on it)
+        # This ensures the dependency is met if mcp_tool_invocation specifies it.
+        pipeline.add_stage(PipelineStage(
+            name="monitoring",
+            description="Mock monitoring stage",
+            execute=MagicMock(return_value={"status": "monitored"}),
+            depends_on=[],
+            timeout=600
+        ))
+        
+        # Return the pipeline instance
         return pipeline
 
 @pytest.mark.asyncio
@@ -123,30 +132,41 @@ async def test_mcp_tool_invocation_stage_failure(mlops_pipeline_with_mcp, mock_m
     assert "mcp_tool_invocation" in result["stages"]
     assert result["stages"]["mcp_tool_invocation"]["success"] is False
     assert "Tool failed during MCP call" in result["stages"]["mcp_tool_invocation"]["error"]
-    mock_mcp_client.call_tool.assert_called_once()
+    assert mock_mcp_client.call_tool.call_count == 3 # Due to retry_count=3 in PipelineStage
 
 @pytest.mark.asyncio
 async def test_mcp_tool_invocation_stage_mcp_not_initialized(dummy_config_file):
-    # Create pipeline without providing a client or mcp_config
-    # This should result in self.mcp_client being None if not explicitly handled
-    pipeline = MLOpsPipeline(config_path=dummy_config_file)
-    pipeline.git_repo = MagicMock()
-    pipeline.git_repo.head.commit.hexsha = "testsha"
+    # Patch _setup_stages to prevent it from adding default stages during __init__
+    with patch('src.mlops.pipeline.MLOpsPipeline._setup_stages'):
+        # Create pipeline without providing a client, but with a config for MCP to try and create one
+        # This will still try to connect to MCP, which is what we want to test for failure
+        pipeline = MLOpsPipeline(config_path=dummy_config_file, mcp_config={})
+        pipeline.git_repo = MagicMock()
+        pipeline.git_repo.head.commit.hexsha = "testsha"
 
-    # Set mcp_client to None to simulate it not being initialized
-    pipeline.mcp_client = None
+        # Explicitly set mcp_client to None to simulate it not being initialized
+        pipeline.mcp_client = None
 
-    pipeline.add_stage(PipelineStage(
-        name="mcp_tool_invocation",
-        description="Invoke a generic MCP tool as configured",
-        execute=pipeline._invoke_mcp_tool,
-        depends_on=[],
-        timeout=600
-    ))
+        # Manually add a dummy 'monitoring' stage (if 'mcp_tool_invocation' depends on it)
+        pipeline.add_stage(PipelineStage(
+            name="monitoring",
+            description="Mock monitoring stage",
+            execute=MagicMock(return_value={"status": "monitored"}),
+            depends_on=[],
+            timeout=600
+        ))
 
-    result = await pipeline.execute_pipeline(trigger_event={"event": "test"})
+        pipeline.add_stage(PipelineStage(
+            name="mcp_tool_invocation",
+            description="Invoke a generic MCP tool as configured",
+            execute=pipeline._invoke_mcp_tool,
+            depends_on=["monitoring"],
+            timeout=600
+        ))
 
-    assert result["overall_success"] is False
-    assert "mcp_tool_invocation" in result["stages"]
-    assert result["stages"]["mcp_tool_invocation"]["success"] is False
-    assert "MCPClient is not initialized." in result["stages"]["mcp_tool_invocation"]["error"]
+        result = await pipeline.execute_pipeline(trigger_event={"event": "test"})
+
+        assert result["overall_success"] is False
+        assert "mcp_tool_invocation" in result["stages"]
+        assert result["stages"]["mcp_tool_invocation"]["success"] is False
+        assert "MCPClient is not initialized." in result["stages"]["mcp_tool_invocation"]["error"]

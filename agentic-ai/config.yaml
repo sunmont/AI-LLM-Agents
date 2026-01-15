@@ -1,0 +1,9 @@
+# config.yaml
+log_level: INFO
+
+skills:
+  - class: poem_skill.PoemSkill # Updated path for root directory
+    config:
+      # Any specific configuration for PoemSkill can go here
+      # For example:
+      # default_style: "free verse"

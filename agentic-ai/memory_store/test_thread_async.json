@@ -1,0 +1,4508 @@
+{
+    "messages": [
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Decomposer done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Decomposer done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Executor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Decomposer done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform an async task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Decomposer done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Executor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Compiler done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        }
+    ],
+    "task": "Perform an async task.",
+    "subtasks": [
+        {
+            "id": "subtask_1",
+            "description": "mock subtask",
+            "skill": "data_retrieval_skill"
+        }
+    ],
+    "results": [
+        {
+            "subtask": {
+                "id": "subtask_1"
+            },
+            "status": "success",
+            "output": {
+                "retrieved_data": "mock_data"
+            },
+            "duration": 0.1
+        }
+    ],
+    "output": {
+        "task": "Perform an async task.",
+        "results": [
+            {
+                "subtask": {
+                    "id": "subtask_1"
+                },
+                "status": "success",
+                "output": {
+                    "retrieved_data": "mock_data"
+                },
+                "duration": 0.1
+            }
+        ],
+        "validation": {},
+        "metadata": {
+            "steps_completed": "compiler",
+            "success_rate": 0.0,
+            "subtasks_count": 1
+        }
+    },
+    "context": {
+        "user": "async_user"
+    },
+    "memory": {
+        "messages": [
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Planner done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Planner done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Decomposer done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Planner done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Planner done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Decomposer done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Executor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Planner done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Planner done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Decomposer done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Planner done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform an async task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Supervisor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Planner done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Decomposer done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Executor done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Compiler done",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            }
+        ],
+        "task": "Perform an async task.",
+        "subtasks": [
+            {
+                "id": "s1",
+                "description": "mock subtask",
+                "skill": "data_retrieval_skill"
+            }
+        ],
+        "results": [
+            {
+                "subtask": {
+                    "id": "s1"
+                },
+                "status": "success",
+                "output": {
+                    "data": "mock_result"
+                }
+            }
+        ],
+        "output": {
+            "task": "Perform an async task.",
+            "results": [
+                {
+                    "subtask": {
+                        "id": "s1"
+                    },
+                    "status": "success",
+                    "output": {
+                        "data": "mock_result"
+                    }
+                }
+            ],
+            "validation": {},
+            "metadata": {
+                "steps_completed": "compiler",
+                "success_rate": 0.0,
+                "subtasks_count": 1
+            }
+        },
+        "context": {
+            "user": "async_user"
+        },
+        "memory": {
+            "messages": [
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task decomposed into 1 subtasks",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task decomposed into 1 subtasks",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Executed 1 subtasks",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task decomposed into 1 subtasks",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform an async task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task decomposed into 1 subtasks",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Executed 1 subtasks",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Final output compiled successfully",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                }
+            ],
+            "task": "Perform an async task.",
+            "subtasks": [
+                {
+                    "id": "subtask_1_default_error",
+                    "description": "Perform general task for: 'Perform an async task.' (Decomposition error)",
+                    "status": "pending",
+                    "expected_skill": "general_purpose_skill",
+                    "input_data": {
+                        "main_task": "Perform an async task.",
+                        "context": {
+                            "user": "async_user"
+                        }
+                    }
+                }
+            ],
+            "results": [
+                {
+                    "subtask": {
+                        "id": "subtask_1_default_error",
+                        "description": "Perform general task for: 'Perform an async task.' (Decomposition error)",
+                        "status": "pending",
+                        "expected_skill": "general_purpose_skill",
+                        "input_data": {
+                            "main_task": "Perform an async task.",
+                            "context": {
+                                "user": "async_user"
+                            }
+                        }
+                    },
+                    "status": "failed",
+                    "error": "Skill 'None' not found.",
+                    "duration": 0.0002467632293701172,
+                    "timestamp": 1768335508.0291388
+                }
+            ],
+            "output": {
+                "task": "Perform an async task.",
+                "results": [
+                    {
+                        "subtask": {
+                            "id": "subtask_1_default_error",
+                            "description": "Perform general task for: 'Perform an async task.' (Decomposition error)",
+                            "status": "pending",
+                            "expected_skill": "general_purpose_skill",
+                            "input_data": {
+                                "main_task": "Perform an async task.",
+                                "context": {
+                                    "user": "async_user"
+                                }
+                            }
+                        },
+                        "status": "failed",
+                        "error": "Skill 'None' not found.",
+                        "duration": 0.0002467632293701172,
+                        "timestamp": 1768335508.0291388
+                    }
+                ],
+                "validation": {},
+                "human_feedback": {},
+                "metadata": {
+                    "execution_time": "2026-01-13T15:18:28.032849",
+                    "steps_completed": "executor",
+                    "subtasks_count": 1,
+                    "success_rate": 0.0
+                }
+            },
+            "context": {
+                "user": "async_user"
+            },
+            "memory": {
+                "messages": [
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task decomposed into 1 subtasks",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task decomposed into 1 subtasks",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Executed 1 subtasks",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task decomposed into 1 subtasks",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform an async task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task decomposed into 1 subtasks",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Executed 1 subtasks",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Final output compiled successfully",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    }
+                ],
+                "task": "Perform an async task.",
+                "subtasks": [
+                    {
+                        "id": "subtask_1_default_error",
+                        "description": "Perform general task for: 'Perform an async task.' (Decomposition error)",
+                        "status": "pending",
+                        "expected_skill": "general_purpose_skill",
+                        "input_data": {
+                            "main_task": "Perform an async task.",
+                            "context": {
+                                "user": "async_user"
+                            }
+                        }
+                    }
+                ],
+                "results": [
+                    {
+                        "subtask": {
+                            "id": "subtask_1_default_error",
+                            "description": "Perform general task for: 'Perform an async task.' (Decomposition error)",
+                            "status": "pending",
+                            "expected_skill": "general_purpose_skill",
+                            "input_data": {
+                                "main_task": "Perform an async task.",
+                                "context": {
+                                    "user": "async_user"
+                                }
+                            }
+                        },
+                        "status": "failed",
+                        "error": "Skill 'None' not found.",
+                        "duration": 0.0002434253692626953,
+                        "timestamp": 1768334234.7020934
+                    }
+                ],
+                "output": {
+                    "task": "Perform an async task.",
+                    "results": [
+                        {
+                            "subtask": {
+                                "id": "subtask_1_default_error",
+                                "description": "Perform general task for: 'Perform an async task.' (Decomposition error)",
+                                "status": "pending",
+                                "expected_skill": "general_purpose_skill",
+                                "input_data": {
+                                    "main_task": "Perform an async task.",
+                                    "context": {
+                                        "user": "async_user"
+                                    }
+                                }
+                            },
+                            "status": "failed",
+                            "error": "Skill 'None' not found.",
+                            "duration": 0.0002434253692626953,
+                            "timestamp": 1768334234.7020934
+                        }
+                    ],
+                    "validation": {},
+                    "human_feedback": {},
+                    "metadata": {
+                        "execution_time": "2026-01-13T14:57:14.703248",
+                        "steps_completed": "executor",
+                        "subtasks_count": 1,
+                        "success_rate": 0.0
+                    }
+                },
+                "context": {
+                    "user": "async_user"
+                },
+                "memory": {
+                    "messages": [
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task decomposed into 1 subtasks",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task decomposed into 1 subtasks",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Executed 1 subtasks",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task decomposed into 1 subtasks",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "You are an intelligent agent orchestrator.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task initialized by supervisor",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task: Perform an async task.",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "human",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Execution plan created: {\n  \"objective\": \"Perform an async task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Task decomposed into 1 subtasks",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Executed 1 subtasks",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        },
+                        {
+                            "content": "Final output compiled successfully",
+                            "additional_kwargs": {},
+                            "response_metadata": {},
+                            "type": "system",
+                            "name": null,
+                            "id": null
+                        }
+                    ],
+                    "task": "Perform an async task.",
+                    "subtasks": [
+                        {
+                            "id": "subtask_1_default_error",
+                            "description": "Perform general task for: 'Perform an async task.' (Decomposition error)",
+                            "status": "pending",
+                            "expected_skill": "general_purpose_skill",
+                            "input_data": {
+                                "main_task": "Perform an async task.",
+                                "context": {
+                                    "user": "async_user"
+                                }
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "subtask": {
+                                "id": "subtask_1_default_error",
+                                "description": "Perform general task for: 'Perform an async task.' (Decomposition error)",
+                                "status": "pending",
+                                "expected_skill": "general_purpose_skill",
+                                "input_data": {
+                                    "main_task": "Perform an async task.",
+                                    "context": {
+                                        "user": "async_user"
+                                    }
+                                }
+                            },
+                            "status": "failed",
+                            "error": "Skill 'None' not found.",
+                            "duration": 0.00012254714965820312,
+                            "timestamp": 1768333970.2770827
+                        }
+                    ],
+                    "output": {
+                        "task": "Perform an async task.",
+                        "results": [
+                            {
+                                "subtask": {
+                                    "id": "subtask_1_default_error",
+                                    "description": "Perform general task for: 'Perform an async task.' (Decomposition error)",
+                                    "status": "pending",
+                                    "expected_skill": "general_purpose_skill",
+                                    "input_data": {
+                                        "main_task": "Perform an async task.",
+                                        "context": {
+                                            "user": "async_user"
+                                        }
+                                    }
+                                },
+                                "status": "failed",
+                                "error": "Skill 'None' not found.",
+                                "duration": 0.00012254714965820312,
+                                "timestamp": 1768333970.2770827
+                            }
+                        ],
+                        "validation": {},
+                        "human_feedback": {},
+                        "metadata": {
+                            "execution_time": "2026-01-13T14:52:50.280043",
+                            "steps_completed": "executor",
+                            "subtasks_count": 1,
+                            "success_rate": 0.0
+                        }
+                    },
+                    "context": {
+                        "user": "async_user"
+                    },
+                    "memory": {},
+                    "current_step": "compiler",
+                    "error": null
+                },
+                "current_step": "compiler",
+                "error": null
+            },
+            "current_step": "compiler",
+            "error": null
+        },
+        "current_step": "compiler",
+        "error": null
+    },
+    "current_step": "compiler",
+    "error": null
+}

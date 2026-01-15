@@ -1,0 +1,3698 @@
+{
+    "messages": [
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Decomposer done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Decomposer done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Executor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Decomposer done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "You are an intelligent agent orchestrator.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Perform a failing task.",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Supervisor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Planner done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Decomposer done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Executor done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        },
+        {
+            "content": "Compiler done",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": null
+        }
+    ],
+    "task": "Perform a failing task.",
+    "subtasks": [
+        {
+            "id": "s1",
+            "description": "mock subtask",
+            "skill": "data_retrieval_skill"
+        }
+    ],
+    "results": [
+        {
+            "subtask": {
+                "id": "s1"
+            },
+            "status": "success",
+            "output": {
+                "data": "mock_result"
+            }
+        }
+    ],
+    "output": {
+        "task": "Perform a failing task.",
+        "results": [
+            {
+                "subtask": {
+                    "id": "s1"
+                },
+                "status": "success",
+                "output": {
+                    "data": "mock_result"
+                }
+            }
+        ],
+        "validation": {},
+        "metadata": {
+            "steps_completed": "compiler",
+            "success_rate": 0.0,
+            "subtasks_count": 1
+        }
+    },
+    "context": {
+        "user": "test"
+    },
+    "memory": {
+        "messages": [
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task initialized by supervisor",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task: Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task initialized by supervisor",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task: Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task initialized by supervisor",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task: Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task initialized by supervisor",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task: Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task decomposed into 1 subtasks",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task initialized by supervisor",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task: Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task initialized by supervisor",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task: Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task initialized by supervisor",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task: Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task initialized by supervisor",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task: Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task decomposed into 1 subtasks",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Executed 1 subtasks",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task initialized by supervisor",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task: Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task initialized by supervisor",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task: Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task initialized by supervisor",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task: Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task initialized by supervisor",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task: Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task decomposed into 1 subtasks",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task initialized by supervisor",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task: Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task initialized by supervisor",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task: Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task initialized by supervisor",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task: Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "You are an intelligent agent orchestrator.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task initialized by supervisor",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task: Perform a failing task.",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "human",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Task decomposed into 1 subtasks",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Executed 1 subtasks",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            },
+            {
+                "content": "Final output compiled successfully",
+                "additional_kwargs": {},
+                "response_metadata": {},
+                "type": "system",
+                "name": null,
+                "id": null
+            }
+        ],
+        "task": "Perform a failing task.",
+        "subtasks": [
+            {
+                "id": "subtask_1_default_error",
+                "description": "Perform general task for: 'Perform a failing task.' (Decomposition error)",
+                "status": "pending",
+                "expected_skill": "general_purpose_skill",
+                "input_data": {
+                    "main_task": "Perform a failing task.",
+                    "context": {
+                        "user": "test"
+                    }
+                }
+            }
+        ],
+        "results": [
+            {
+                "subtask": {
+                    "id": "subtask_1_default_error",
+                    "description": "Perform general task for: 'Perform a failing task.' (Decomposition error)",
+                    "status": "pending",
+                    "expected_skill": "general_purpose_skill",
+                    "input_data": {
+                        "main_task": "Perform a failing task.",
+                        "context": {
+                            "user": "test"
+                        }
+                    }
+                },
+                "status": "failed",
+                "error": "Skill 'None' not found.",
+                "duration": 0.0002200603485107422,
+                "timestamp": 1768335507.8894992
+            }
+        ],
+        "output": {
+            "task": "Perform a failing task.",
+            "results": [
+                {
+                    "subtask": {
+                        "id": "subtask_1_default_error",
+                        "description": "Perform general task for: 'Perform a failing task.' (Decomposition error)",
+                        "status": "pending",
+                        "expected_skill": "general_purpose_skill",
+                        "input_data": {
+                            "main_task": "Perform a failing task.",
+                            "context": {
+                                "user": "test"
+                            }
+                        }
+                    },
+                    "status": "failed",
+                    "error": "Skill 'None' not found.",
+                    "duration": 0.0002200603485107422,
+                    "timestamp": 1768335507.8894992
+                }
+            ],
+            "validation": {},
+            "human_feedback": {},
+            "metadata": {
+                "execution_time": "2026-01-13T15:18:27.892067",
+                "steps_completed": "executor",
+                "subtasks_count": 1,
+                "success_rate": 0.0
+            }
+        },
+        "context": {
+            "user": "test"
+        },
+        "memory": {
+            "messages": [
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task decomposed into 1 subtasks",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task decomposed into 1 subtasks",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Executed 1 subtasks",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task decomposed into 1 subtasks",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "You are an intelligent agent orchestrator.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task initialized by supervisor",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task: Perform a failing task.",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "human",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Task decomposed into 1 subtasks",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Executed 1 subtasks",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                },
+                {
+                    "content": "Final output compiled successfully",
+                    "additional_kwargs": {},
+                    "response_metadata": {},
+                    "type": "system",
+                    "name": null,
+                    "id": null
+                }
+            ],
+            "task": "Perform a failing task.",
+            "subtasks": [
+                {
+                    "id": "subtask_1_default_error",
+                    "description": "Perform general task for: 'Perform a failing task.' (Decomposition error)",
+                    "status": "pending",
+                    "expected_skill": "general_purpose_skill",
+                    "input_data": {
+                        "main_task": "Perform a failing task.",
+                        "context": {
+                            "user": "test"
+                        }
+                    }
+                }
+            ],
+            "results": [
+                {
+                    "subtask": {
+                        "id": "subtask_1_default_error",
+                        "description": "Perform general task for: 'Perform a failing task.' (Decomposition error)",
+                        "status": "pending",
+                        "expected_skill": "general_purpose_skill",
+                        "input_data": {
+                            "main_task": "Perform a failing task.",
+                            "context": {
+                                "user": "test"
+                            }
+                        }
+                    },
+                    "status": "failed",
+                    "error": "Skill 'None' not found.",
+                    "duration": 0.0001766681671142578,
+                    "timestamp": 1768334234.5570261
+                }
+            ],
+            "output": {
+                "task": "Perform a failing task.",
+                "results": [
+                    {
+                        "subtask": {
+                            "id": "subtask_1_default_error",
+                            "description": "Perform general task for: 'Perform a failing task.' (Decomposition error)",
+                            "status": "pending",
+                            "expected_skill": "general_purpose_skill",
+                            "input_data": {
+                                "main_task": "Perform a failing task.",
+                                "context": {
+                                    "user": "test"
+                                }
+                            }
+                        },
+                        "status": "failed",
+                        "error": "Skill 'None' not found.",
+                        "duration": 0.0001766681671142578,
+                        "timestamp": 1768334234.5570261
+                    }
+                ],
+                "validation": {},
+                "human_feedback": {},
+                "metadata": {
+                    "execution_time": "2026-01-13T14:57:14.559595",
+                    "steps_completed": "executor",
+                    "subtasks_count": 1,
+                    "success_rate": 0.0
+                }
+            },
+            "context": {
+                "user": "test"
+            },
+            "memory": {
+                "messages": [
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task decomposed into 1 subtasks",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task decomposed into 1 subtasks",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Executed 1 subtasks",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task decomposed into 1 subtasks",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "You are an intelligent agent orchestrator.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task initialized by supervisor",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task: Perform a failing task.",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "human",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Execution plan created: {\n  \"objective\": \"Perform a failing task.\",\n  \"strategy\": \"sequential_execution\",\n  \"estimated_steps\": 3,\n  \"required_resources\": [\n    \"memory\",\n    \"tools\"\n  ],\n  \"constraints\": {}\n}",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Task decomposed into 1 subtasks",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Executed 1 subtasks",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    },
+                    {
+                        "content": "Final output compiled successfully",
+                        "additional_kwargs": {},
+                        "response_metadata": {},
+                        "type": "system",
+                        "name": null,
+                        "id": null
+                    }
+                ],
+                "task": "Perform a failing task.",
+                "subtasks": [
+                    {
+                        "id": "subtask_1_default_error",
+                        "description": "Perform general task for: 'Perform a failing task.' (Decomposition error)",
+                        "status": "pending",
+                        "expected_skill": "general_purpose_skill",
+                        "input_data": {
+                            "main_task": "Perform a failing task.",
+                            "context": {
+                                "user": "test"
+                            }
+                        }
+                    }
+                ],
+                "results": [
+                    {
+                        "subtask": {
+                            "id": "subtask_1_default_error",
+                            "description": "Perform general task for: 'Perform a failing task.' (Decomposition error)",
+                            "status": "pending",
+                            "expected_skill": "general_purpose_skill",
+                            "input_data": {
+                                "main_task": "Perform a failing task.",
+                                "context": {
+                                    "user": "test"
+                                }
+                            }
+                        },
+                        "status": "failed",
+                        "error": "Skill 'None' not found.",
+                        "duration": 0.00014853477478027344,
+                        "timestamp": 1768333970.1436734
+                    }
+                ],
+                "output": {
+                    "task": "Perform a failing task.",
+                    "results": [
+                        {
+                            "subtask": {
+                                "id": "subtask_1_default_error",
+                                "description": "Perform general task for: 'Perform a failing task.' (Decomposition error)",
+                                "status": "pending",
+                                "expected_skill": "general_purpose_skill",
+                                "input_data": {
+                                    "main_task": "Perform a failing task.",
+                                    "context": {
+                                        "user": "test"
+                                    }
+                                }
+                            },
+                            "status": "failed",
+                            "error": "Skill 'None' not found.",
+                            "duration": 0.00014853477478027344,
+                            "timestamp": 1768333970.1436734
+                        }
+                    ],
+                    "validation": {},
+                    "human_feedback": {},
+                    "metadata": {
+                        "execution_time": "2026-01-13T14:52:50.147068",
+                        "steps_completed": "executor",
+                        "subtasks_count": 1,
+                        "success_rate": 0.0
+                    }
+                },
+                "context": {
+                    "user": "test"
+                },
+                "memory": {},
+                "current_step": "compiler",
+                "error": null
+            },
+            "current_step": "compiler",
+            "error": null
+        },
+        "current_step": "compiler",
+        "error": null
+    },
+    "current_step": "compiler",
+    "error": null
+}
