@@ -50,8 +50,9 @@ class TaskSpecification(BaseModel):
 class AgenticOrchestrator:
     """Graph-based agent orchestration system"""
 
-    def __init__(self, config: Dict[str, Any]):
+    def __init__(self, config: Dict[str, Any], mcp_client: Optional['MCPClient'] = None):
         self.config = config
+        self.mcp_client = mcp_client
         self.workflow_graph = StateGraph(AgentState)
         self.checkpointer = InMemorySaver()
         self.skills_registry: Dict[str, Any] = {}
@@ -560,8 +561,13 @@ class AgenticOrchestrator:
         except Exception as e:
             logger.warning(f"Failed to update memory for {thread_id}: {e}")
 
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from ..mcp.mcp_client import MCPClient
+
 # Factory function for creating orchestrator
-def create_orchestrator(config_path: Optional[str] = None) -> AgenticOrchestrator:
+def create_orchestrator(config_path: Optional[str] = None, mcp_client: Optional['MCPClient'] = None) -> 'AgenticOrchestrator':
     """Factory function to create orchestrator with configuration"""
     config = {}
 
@@ -570,7 +576,7 @@ def create_orchestrator(config_path: Optional[str] = None) -> AgenticOrchestrato
         with open(config_path, 'r') as f:
             config = yaml.safe_load(f)
 
-    orchestrator = AgenticOrchestrator(config)
+    orchestrator = AgenticOrchestrator(config, mcp_client=mcp_client)
 
     # Auto-register skills from config
     if "skills" in config:
@@ -580,7 +586,12 @@ def create_orchestrator(config_path: Optional[str] = None) -> AgenticOrchestrato
                 module_name, class_name = skill_config["class"].rsplit(".", 1)
                 module = __import__(module_name, fromlist=[class_name])
                 skill_class = getattr(module, class_name)
-                skill_instance = skill_class(skill_config.get("config", {}))
+                
+                # Pass mcp_client to the skill's constructor
+                skill_instance = skill_class(
+                    config=skill_config.get("config", {}),
+                    mcp_client=mcp_client
+                )
                 orchestrator.register_skill(skill_instance)
             except Exception as e:
                 logger.error(f"Failed to register skill {skill_config.get('class')}: {e}")

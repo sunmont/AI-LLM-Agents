@@ -160,8 +160,9 @@ def skill_decorator(timeout: int = 300, retries: int = 3):
 class BaseSkill(ABC):
     """Base class for all agent skills"""
 
-    def __init__(self, config: SkillConfiguration):
+    def __init__(self, config: SkillConfiguration, mcp_client: Optional['MCPClient'] = None):
         self.config = config
+        self.mcp_client = mcp_client
         self.tools: List[Any] = []
         self.cache: Dict[str, Any] = {}
         self.execution_history: List[SkillResult] = []
@@ -328,8 +329,8 @@ class BaseSkill(ABC):
 class CompositeSkill(BaseSkill):
     """Skill that composes multiple sub-skills"""
 
-    def __init__(self, config: SkillConfiguration, sub_skills: List[BaseSkill]):
-        super().__init__(config)
+    def __init__(self, config: SkillConfiguration, sub_skills: List[BaseSkill], mcp_client: Optional['MCPClient'] = None):
+        super().__init__(config, mcp_client=mcp_client)
         self.sub_skills = sub_skills
 
     def _setup_tools(self):

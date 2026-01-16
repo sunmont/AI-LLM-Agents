@@ -47,6 +47,7 @@ class SkillExecutor:
                     "output": skill_output.data,
                     "error": skill_output.error,
                     "duration": skill_output.execution_time,
+                    "metadata": skill_output.metadata,  # Added metadata
                     "timestamp": time.time()
                 }
                 return result
